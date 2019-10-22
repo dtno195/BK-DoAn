@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" 
+                template="/WEB-INF/jsp/dashboard/layout/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/jsp/dashboard/layout/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/jsp/dashboard/layout/footer.jsp" /> 
+    </definition>
+    <definition name="DefaultTemplate" 
+                template="/WEB-INF/jsp/dashboard/layout/dashboard.jsp">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="header" value="/WEB-INF/jsp/dashboard/layout/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/dashboard/layout/footer.jsp" />
+    </definition>
+    <definition name="dashboard.definition"  template="/WEB-INF/jsp/dashboard/layout/dashboard.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/jsp/dashboard/layout/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/jsp/dashboard/layout/footer.jsp" /> 
+    </definition>  
+    <definition name="index" extends="dashboard.definition">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/layout/index.jsp" />  
+    </definition>
+    
+    <definition name="AdminTemplate"  template="/WEB-INF/jsp/admin/layout/template.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" />  
+    </definition> 
+    <definition name="AdminTemplate2"  template="/WEB-INF/jsp/admin/layout/template2.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="leftside" value="/WEB-INF/jsp/admin/layout/leftside.jsp" />  
+        <put-attribute name="body" value="" />  
+    </definition> 
+    <definition name="tbl_topic" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_topic/tbltopic.jsp" />  
+    </definition> 
+    
+    
+    <definition name="tbl_user" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_users/Index.jsp" />  
+    </definition>
+    <definition name="tbl_divison" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_divison/Index.jsp" />  
+    </definition>
+    <definition name="eventlogs" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/eventlogs/Index.jsp" />  
+    </definition>
+    <definition name="tbl_news" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_news/Index.jsp" />  
+    </definition>
+    <definition name="tbl_exam" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_exam/Index.jsp" />  
+    </definition>
+    <definition name="tbl_questions" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_questions/Index.jsp" />  
+    </definition>
+    <definition name="login" template="/WEB-INF/jsp/admin/login.jsp">  
+        
+    </definition>
+    <definition name="signup" template="/WEB-INF/jsp/admin/signup.jsp">  
+        
+    </definition>
+    <definition name="exam" extends="DefaultTemplate">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/exam/Exam.jsp" />  
+    </definition>
+    <definition name="ElearningMaterial"  template="/WEB-INF/jsp/dashboard/layout/elearning_layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="leftside" value="/WEB-INF/jsp/dashboard/layout/elearning_left.jsp" />  
+        <put-attribute name="rightside" value="/WEB-INF/jsp/dashboard/layout/elearning_right.jsp" />  
+        <put-attribute name="body" value="" />  
+    </definition>
+    <definition name="home" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/exam/test.jsp" />  
+    </definition>
+    <definition name="dashboard" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard.jsp" />  
+    </definition>
+    <definition name="listExam" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/listExam.jsp" />  
+    </definition>
+    <definition name="examResult" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/examResult.jsp" />  
+    </definition>
+    <definition name="news" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/news.jsp" />  
+    </definition>
+    <definition name="resultTest" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/resultTest.jsp" />  
+    </definition>
+    <definition name="newsdetail" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/dashboard/newsDetail.jsp" />  
+    </definition>
+    
+    <definition name="tbl_files" extends="AdminTemplate2">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/tbl_files/tblfiles.jsp" />  
+    </definition>
+    
+    <definition name="plan" extends="ElearningMaterial">  
+        <put-attribute name="title" value="Hệ thống quản lý thi trắc nghiệm" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/tblplans/Index.jsp" />  
+    </definition>
+</tiles-definitions>
