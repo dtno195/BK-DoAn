@@ -77,7 +77,7 @@
                     <div class="footer-content">
                         <div class="row copy-wrapper">
                             <div class="col-xs-8">
-                                <p class="copy">© Copyright <time class="year">2018</time> THCS Phùng Xá - All Rights Reserved</p>
+                                <p class="copy">© Copyright <time class="year">2019</time> BK ĐứcNT - All Rights Reserved</p>
                             </div>
                         </div>
                     </div>
