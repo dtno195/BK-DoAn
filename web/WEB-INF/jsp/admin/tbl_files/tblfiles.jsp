@@ -1,8 +1,4 @@
-<%-- 
-    Document   : tblfiles
-    Created on : Oct 2, 2018, 9:17:31 PM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="${pageContext.request.contextPath}/share/css/imageuploadify.min.css" rel="stylesheet" type="text/css"/>

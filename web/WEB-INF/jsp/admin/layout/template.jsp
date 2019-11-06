@@ -1,8 +1,4 @@
-<%-- 
-    Document   : template
-    Created on : Sep 11, 2018, 1:52:06 PM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

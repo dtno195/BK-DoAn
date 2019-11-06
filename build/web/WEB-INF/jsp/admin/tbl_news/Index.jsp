@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Index
-    Created on : Sep 14, 2018, 2:36:29 PM
-    Author     : lienptk
---%>
+
 
 <%@page import="com.ptk.elearning.common.CommonConstant"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

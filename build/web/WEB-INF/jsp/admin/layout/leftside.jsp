@@ -1,8 +1,4 @@
-<%-- 
-    Document   : leftside
-    Created on : Sep 11, 2018, 1:57:44 PM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>  

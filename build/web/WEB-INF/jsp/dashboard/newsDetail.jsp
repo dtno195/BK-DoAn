@@ -7,7 +7,7 @@
 <div class="row">
     <div class="header col-sm-12" style="margin-top:20px">
         <div class="btn-group btn-breadcrumb">
-            <a href="/Home/Index" class="btn btn-default"><i class="fa fa-home"></i></a>
+            <a href="/Elearning/dashboard.html" class="btn btn-default"><i class="fa fa-home"></i></a>
             <a style="margin-left:10px;" href="javascript:void(0)" class="btn">${tblNewsDTO.title}</a>
         </div>
     </div>

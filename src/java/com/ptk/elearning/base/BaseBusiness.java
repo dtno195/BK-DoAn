@@ -5,8 +5,3 @@
  */
 package com.ptk.elearning.base;
 
-/**
- *
- * @author lienptk
- */
-

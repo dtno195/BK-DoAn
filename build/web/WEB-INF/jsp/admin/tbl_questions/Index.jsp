@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Index
-    Created on : Sep 15, 2018, 4:27:37 PM
-    Author     : lienptk
---%>
 
 
 <%@page import="com.ptk.elearning.common.CommonConstant"%>
