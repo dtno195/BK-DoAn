@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Index
-    Created on : Oct 15, 2018, 11:08:21 PM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <style>

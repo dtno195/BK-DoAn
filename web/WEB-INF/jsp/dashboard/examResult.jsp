@@ -1,8 +1,3 @@
-<%-- 
-    Document   : examResult
-    Created on : Nov 4, 2018, 2:31:27 PM
-    Author     : phith
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

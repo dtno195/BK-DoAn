@@ -1,8 +1,4 @@
-<%-- 
-    Document   : elearning_left
-    Created on : Sep 22, 2018, 1:58:27 AM
-    Author     : David
---%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

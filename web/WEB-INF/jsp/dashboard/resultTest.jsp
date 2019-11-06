@@ -1,8 +1,4 @@
-<%-- 
-    Document   : resultTest
-    Created on : Nov 6, 2018, 3:48:49 AM
-    Author     : phith
---%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>

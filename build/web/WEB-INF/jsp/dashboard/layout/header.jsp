@@ -1,8 +1,4 @@
-<%-- 
-    Document   : newjspheader
-    Created on : Sep 10, 2018, 12:48:15 PM
-    Author     : phith
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

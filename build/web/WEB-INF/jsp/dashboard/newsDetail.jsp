@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="timeline-seperator text-center"> <span>Bình luận</span>
+    <!-- <div class="timeline-seperator text-center"> <span>Bình luận</span>
         <div class="btn-group pull-right">
             <a href="javascript:void(0);" data-toggle="dropdown" class="btn btn-default btn-xs dropdown-toggle"><span class="caret single"></span></a>
             <ul class="dropdown-menu text-left">
@@ -39,8 +39,8 @@
                 </li>
             </ul>
         </div> 
-    </div>
-    <div class="chat-body no-padding profile-message">
+    </div> -->
+    <!-- <div class="chat-body no-padding profile-message">
         <div class="col-sm-12 row">
             <ul>
                 <c:forEach items="${listComment}" var="obj">
@@ -50,26 +50,21 @@
                         <span style="float: right"><fmt:formatDate pattern='dd/MM/yyyy HH:mm:ss' value="${obj.dateComment}"/></span>
                     </li>
                 </c:forEach>
-                <!--            <li class="message message-reply">
-                                
-                            </li>-->
             </ul>
         </div>
-        <div class="col-sm-12">&nbsp;</div>
-        <div class="col-sm-12 ">
+        <div class="col-sm-12">&nbsp;</div> -->
+        <!-- <div class="col-sm-12 ">
             <form action="/Elearning/TblNews/newsdetails.html" method="POST">
                 <textarea placeholder="Nội dung muốn bình luận" rows="20" 
                           name="content" id="comment_text" cols="40" 
                           class="ui-autocomplete-input" autocomplete="off" role="textbox" 
                           aria-autocomplete="list" aria-haspopup="true" onkeypress="actionComment();">${content}</textarea>                    
-                <!--<input name="content" value="${content}" class="form-control input-xs" placeholder="Type and enter" type="text" onkeypress="actionComment();">-->
                 <input value="${newId}" name="id" hidden="true">
-                <!--                    <input type="submit" id="actionComment" hidden="true">-->
                 <a class="btn btn-primary" style="color: white" href="javascript:void(0)" onclick="actionComment();">Post</a>
             </form>
-        </div>
+        </div> -->
 
-    </div>
+    <!-- </div> -->
 </div>
 <script type="text/javascript">
     function actionComment() {

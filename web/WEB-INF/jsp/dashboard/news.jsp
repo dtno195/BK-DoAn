@@ -1,8 +1,4 @@
-<%-- 
-    Document   : news
-    Created on : Oct 22, 2018, 9:48:05 PM
-    Author     : phith
---%>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>

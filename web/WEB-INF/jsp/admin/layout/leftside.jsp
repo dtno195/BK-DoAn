@@ -12,7 +12,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="${pageContext.request.contextPath}/share/AdminLTE/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                <img src="${pageContext.request.contextPath}/share/img/bk.png" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p> ${fn:escapeXml(sessionScope.CURRENT_USER.fullName)}</p>
@@ -20,6 +20,18 @@
             </div>
         </div>
         <ul class="sidebar-menu" data-widget="tree">
+            <li id="TblExam">
+                <a href="../TblExam/Index.html">
+                    <i class="fa fa-edit"></i>
+                    <span>Quản lý đề thi</span>
+                </a>
+            </li>
+            <li id="TblQuestions">
+                <a href="../TblQuestions/Index.html">
+                    <i class="fa fa-table"></i>
+                    <span>Ngân hàng câu hỏi</span>
+                </a>
+            </li>
             <li id="TblUser">
                 <a href="../TblUser/Index.html">
                     <i class="fa fa-files-o"></i>
@@ -42,18 +54,6 @@
                 <a href="../TblNews/Index.html">
                     <i class="fa fa-newspaper-o"></i>
                     <span>Quản lý bài viết</span>
-                </a>
-            </li>
-            <li id="TblExam">
-                <a href="../TblExam/Index.html">
-                    <i class="fa fa-edit"></i>
-                    <span>Quản lý đề thi</span>
-                </a>
-            </li>
-            <li id="TblQuestions">
-                <a href="../TblQuestions/Index.html">
-                    <i class="fa fa-table"></i>
-                    <span>Ngân hàng câu hỏi</span>
                 </a>
             </li>
             <li id="TblTopic">

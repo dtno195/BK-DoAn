@@ -1,8 +1,4 @@
-<%-- 
-    Document   : dashboard
-    Created on : Sep 22, 2018, 11:58:05 PM
-    Author     : lienptk
---%>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

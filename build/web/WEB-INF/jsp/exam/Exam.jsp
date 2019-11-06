@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Exam
-    Created on : Sep 21, 2018, 3:04:41 PM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="${pageContext.request.contextPath}/share/css/examl-core.css" rel="stylesheet" type="text/css"/>

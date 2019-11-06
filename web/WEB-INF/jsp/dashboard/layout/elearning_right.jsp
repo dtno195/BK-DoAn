@@ -1,8 +1,4 @@
-<%-- 
-    Document   : elearning_right
-    Created on : Sep 23, 2018, 12:17:50 AM
-    Author     : lienptk
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

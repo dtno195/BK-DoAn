@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Exam
-    Created on : Sep 21, 2018, 3:04:41 PM
-    Author     : lienptk
---%>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>

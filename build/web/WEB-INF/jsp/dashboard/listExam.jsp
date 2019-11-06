@@ -1,8 +1,4 @@
-<%-- 
-    Document   : newsDetail
-    Created on : Oct 22, 2018, 8:03:32 PM
-    Author     : phith
---%>
+
 <%@page import="com.ptk.elearning.util.Converter"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
