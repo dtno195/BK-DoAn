@@ -32,7 +32,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -278,56 +277,17 @@ public class TblQuestionsController extends BaseController {
     @RequestMapping(value = {"/importExcel.html"}, method = RequestMethod.POST)
     @ResponseBody
     public String importExcel(HttpServletRequest request, @RequestParam("files") MultipartFile file) throws IOException {
-        String path = request.getRealPath("/WEB-INF/template/") + "OMML2MML.XML";
-        Integer subjectId = Converter.converToInt(request.getParameter("subjectId"));
-        int totalSuccess = 0;
-        int totalFail = 0;
-        List<ImportErrorMessage> lstImportErrorMessages = new ArrayList<>();
-        if (file != null && !Strings.isNullOrEmpty(file.getOriginalFilename()) && (file.getOriginalFilename().toLowerCase().endsWith(".doc")
-                || file.getOriginalFilename().toLowerCase().endsWith(".docx"))
+        if (file != null && !Strings.isNullOrEmpty(file.getOriginalFilename()) && (file.getOriginalFilename().toLowerCase().endsWith(".xls")
+                || file.getOriginalFilename().toLowerCase().endsWith(".xlsx"))
                 && file.getSize() <= 20480000) {
             File newFiles = new File(request.getRealPath("/WEB-INF/import/"), file.getOriginalFilename());
             if (!newFiles.exists()) {
                 newFiles.createNewFile();
                 file.transferTo(newFiles);
             }
-            List<TblQuestionsDTO> data = ImportQuestionUtil.importQuestion(newFiles.getPath(), "aaaaaaaaa", path);
-            for (TblQuestionsDTO tblQuestionsDTO : data) {
-                ImportErrorMessage errorMessage = new ImportErrorMessage();
-                HashMap<String, String> hmError = new HashMap<>();
-                List<ValidationResult> error = validateForm(tblQuestionsDTO, hmError);
-                tblQuestionsDTO.setContent(tblQuestionsDTO.getContent().replace("$$", ""));
-                tblQuestionsDTO.setSubjectId(subjectId);
-                tblQuestionsDTO.setDateCreated(new Date());
-                tblQuestionsDTO.setLevelId(1);
-                ErrorResult serviceResult = tblQuestionsBusiness.insert(tblQuestionsDTO.toModel());
-                if (!serviceResult.isHasError()) {
-                    totalSuccess++;
-                    tblQuestionsDTO.getLstAnswer().stream().forEach((item) -> {
-                        item.setQuestionId(serviceResult.getId());
-                    });
-                    List<TblAnswer> lstAnswers = tblQuestionsDTO.getLstAnswer().stream().map(r -> {
-                        return r.toModel();
-                    }).collect(Collectors.toList());
-                    tblAnswerBusiness.insertList(lstAnswers);
-                    addEventLog("ADD_TBL_QUESTION", "QUESTION name=" + tblQuestionsDTO.getContent(), serviceResult.isHasError() ? CommonConstant.EVENT_FAIL : CommonConstant.EVENT_SUCCESS, request);
-                } else {
-                    totalFail++;
-                    ValidationResult validationResult = new ValidationResult();
-                    validationResult.setError((serviceResult.getError()));
-                    error.add(validationResult);
-                    errorMessage.setLstError(error);
-                    lstImportErrorMessages.add(errorMessage);
-                }
-            }
+            String result = this.readWaterPointsFromExcelFile(newFiles.getPath(), true, request);
             newFiles.delete();
-
-            JsonObject jsObj = new JsonObject();
-            jsObj.addProperty("totalSuccess", String.valueOf(totalSuccess));
-            jsObj.addProperty("totalFail", String.valueOf(totalFail));
-            jsObj.addProperty("rdList", new Gson().toJson(lstImportErrorMessages));
-
-            return jsObj.toString();
+            return result;
         }
         return null;
     }
