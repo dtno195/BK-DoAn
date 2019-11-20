@@ -383,71 +383,67 @@ function importData() {
         $("#fileUploadNameError").html("Bạn chưa chọn file import");
         return false;
     }
-    if (!isFileValid("#fileImport", "application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document", 1048576)) {
+    if (!isFileValid("#fileImport", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel", 1048576)) {
         $("#fileUploadNameError").html("File không đúng định dạng hoặc quá dung lượng cho phép");
         return false;
     }
-    if ($("#subjectId_import").val() < 0) {
-        $("#subjectImportErr").html("Bạn chưa chọn môn học");
-        return false;
-    }
     var oMyForm = new FormData();
-      oMyForm.append("files", fileImport.files[0]);
+    oMyForm.append("files", fileImport.files[0]);
     
-    $.ajax({
-       url : 'importExcel.html?subjectId=' + $("#subjectId_import").val(),
-       type : 'POST',
-       data : oMyForm,
-       processData: false,  // tell jQuery not to process the data
-       contentType: false,  // tell jQuery not to set contentType
-       success : function(result) {
-            $("#importRegister").modal("hide");
-            if (result.totalFail > 0) {
-                $("#dialog-Error").modal("show");
-                loadError(result);
-                if (result.totalSuccess > 0) {
-                    notifSuccess("Import dữ liệu câu hỏi thành công");
-                    
-                } else {
-                    notifError("Import dữ liệu câu hỏi không thành công");
-                }
-            } else {
-                notifSuccess("Import tất cả dữ liệu thành công (" + result.totalSuccess + " bản ghi)");
-            }
-            doSearch();
-       }
-    });
-
-
-
-//    jQuery.ajax({
-//        type: "POST",
-//        async: false,
-//        url: 'importExcel.html',
-//        data: oMyForm,
-//        processData: false,
-//        contentType: false,
-//        dataType: 'json',
-//        enctype: 'multipart/form-data',
-//        success: function (result) {
+//    $.ajax({
+//       url : 'importExcel.html?subjectId=' + $("#subjectId_import").val(),
+//       type : 'POST',
+//       data : oMyForm,
+//       processData: false,  // tell jQuery not to process the data
+//       contentType: false,  // tell jQuery not to set contentType
+//       success : function(result) {
 //            $("#importRegister").modal("hide");
 //            if (result.totalFail > 0) {
 //                $("#dialog-Error").modal("show");
 //                loadError(result);
 //                if (result.totalSuccess > 0) {
 //                    notifSuccess("Import dữ liệu câu hỏi thành công");
-//                    doSearch();
+//                    
 //                } else {
 //                    notifError("Import dữ liệu câu hỏi không thành công");
 //                }
 //            } else {
 //                notifSuccess("Import tất cả dữ liệu thành công (" + result.totalSuccess + " bản ghi)");
 //            }
-//        },
-//        error: function (err) {
-//            console.log(err);
-//        }
+//            doSearch();
+//       }
 //    });
+
+
+
+    jQuery.ajax({
+        type: "POST",
+        async: false,
+        url: 'importExcel.html',
+        data: oMyForm,
+        processData: false,
+        contentType: false,
+        dataType: 'json',
+        enctype: 'multipart/form-data',
+        success: function (result) {
+            $("#importRegister").modal("hide");
+            if (result.totalFail > 0) {
+                $("#dialog-Error").modal("show");
+                loadError(result);
+                if (result.totalSuccess > 0) {
+                    notifSuccess("Import dữ liệu câu hỏi thành công");
+                    doSearch();
+                } else {
+                    notifError("Import dữ liệu câu hỏi không thành công");
+                }
+            } else {
+                notifSuccess("Import tất cả dữ liệu thành công (" + result.totalSuccess + " bản ghi)");
+            }
+        },
+        error: function (err) {
+            console.log(err);
+        }
+    });
 }
 function loadError(result) {
     if (result !== null) {

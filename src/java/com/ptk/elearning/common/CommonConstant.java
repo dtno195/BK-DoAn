@@ -29,7 +29,7 @@ public class CommonConstant {
 
     public static final String SOCKET_URI = "http://127.0.0.1:3000";
     
-    public static final String DIRECTORY = "E:\\Elearning1\\Images";
+    public static final String DIRECTORY = "D:\\Elearning1\\Images";
 
 }
     

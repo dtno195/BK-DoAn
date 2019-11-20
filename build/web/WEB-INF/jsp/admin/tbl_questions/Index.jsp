@@ -147,7 +147,7 @@
                     <div class="form-group custom-margin" style="padding-left: 10px !important">
                         <label class="btn btn-success">
                             Lựa chọn file import
-                            <input accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"  type="file" id="fileImport" accept="" name="files" value="files" style="display: none;">
+                            <input accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  type="file" id="fileImport" accept="" name="files" value="files" style="display: none;">
                         </label>
                     </div>
                     <div class="form-group custom-margin" style="padding-left: 10px !important">
@@ -169,13 +169,13 @@
                         <span style="color: red" id="subjectImportErr"></span>
                     </div>
                     <div class="form-group custom-margin">
-                        <label class="col-md-12">Định dạng file cho phép: .DOC, .DOCX</label>
+                        <label class="col-md-12">Định dạng file cho phép: .XLS, .XLSX</label>
                     </div>
                     <div class="form-group custom-margin">
                         <label class="col-md-12">Dung lượng tối đa: 20Mb</label>
                     </div>
                     <div class="form-group custom-margin">
-                        <label class="col-md-12">File mẫu: <a href="javascript:void(0)" title="Tải xuống với định dạng .doc"  onclick="downloadTemplate(1);">DOC</a> | <a href="javascript:void(0)" title="Tải xuống với định dạng .docx" onclick="downloadTemplate(2);">DOCX</a></label>
+                        <label class="col-md-12">File mẫu: <a href="javascript:void(0)" title="Tải xuống với định dạng .doc"  onclick="downloadTemplate(1);">XLS</a> | <a href="javascript:void(0)" title="Tải xuống với định dạng .docx" onclick="downloadTemplate(2);">XLSX</a></label>
                     </div>
                 </form>
             </div>

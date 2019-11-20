@@ -91,7 +91,7 @@
         <div class="wrapper">
             <header class="main-header">
                 <!-- Logo -->
-                <a href="index2.html" class="logo">
+                <a href="http://localhost:8080/Elearning/TblExam/Index.html" class="logo">
                     <span class="logo-mini"><b>A</b>LT</span>
                     <span class="logo-lg"><b>Elearning</b></span>
                 </a>
@@ -149,7 +149,7 @@
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 2.4.0
                 </div>
-                <strong>Copyright &copy; 2018 <a href="">THCS Phùng Xá</a>.</strong> All rights
+                <strong>Copyright &copy; 2019 <a href="">BK Ducnt</a>.</strong> All rights
                 reserved.
             </footer>
 
