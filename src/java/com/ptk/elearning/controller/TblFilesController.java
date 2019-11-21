@@ -149,7 +149,7 @@ public class TblFilesController extends BaseController {
                     serverFile = new File(CommonConstant.DIRECTORY + "\\" + path + "\\" + fileName + "." + extension);
                 }
                 try (BufferedOutputStream streamOut = new BufferedOutputStream(
-                        new FileOutputStream(serverFile))) {
+                        new FileOutputStream(serverFile.toString()))) {
                     streamOut.write(item.getBytes());
                     streamOut.close();
                     uploaded++;
