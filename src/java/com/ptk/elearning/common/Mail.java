@@ -18,8 +18,8 @@ import javax.mail.internet.MimeMessage;
 
 public class Mail {
 
-    private static String from = "elearning.ptk@gmail.com";
-    private static String pwd = "lien@12345";
+    private static String from = "ntd0021995@gmail.com";
+    private static String pwd = "daihockt95";
 
     public static void send(String to, String subject, String body) throws Exception {
         Properties props = System.getProperties();
