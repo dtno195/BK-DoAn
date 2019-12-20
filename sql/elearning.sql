@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : serverTest
+ Source Server         : da
  Source Server Type    : MySQL
- Source Server Version : 80014
- Source Host           : 103.81.86.53:3306
+ Source Server Version : 80017
+ Source Host           : localhost:3306
  Source Schema         : elearning
 
  Target Server Type    : MySQL
- Target Server Version : 80014
+ Target Server Version : 80017
  File Encoding         : 65001
 
- Date: 23/04/2019 07:36:19
+ Date: 20/12/2019 21:01:26
 */
 
 SET NAMES utf8mb4;
@@ -32,7 +32,7 @@ CREATE TABLE `event_logs`  (
   `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   PRIMARY KEY (`event_id`) USING BTREE,
   INDEX `hghghgjh`(`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2045 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 2098 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of event_logs
@@ -2096,6 +2096,44 @@ INSERT INTO `event_logs` VALUES (2056, '2019-04-23 07:31:59', 25, 'ADD_TBL_QUEST
 INSERT INTO `event_logs` VALUES (2057, '2019-04-23 07:31:59', 25, 'ADD_TBL_QUESTION', NULL, '116.96.175.216', 'NguyenHongNgoc', 'QUESTION name=T6.Câu 27a. Muốn lưu văn bản đã lưu một lần, thực hiện thao tác:');
 INSERT INTO `event_logs` VALUES (2058, '2019-04-23 07:31:59', 25, 'ADD_TBL_QUESTION', NULL, '116.96.175.216', 'NguyenHongNgoc', 'QUESTION name=T6.Câu 28a. Khi đặt lại hướng trang văn bản, các kết quả định dạng văn bản em đã làm trước đó có bị mất không?');
 INSERT INTO `event_logs` VALUES (2059, '2019-04-23 07:31:59', 25, 'ADD_TBL_QUESTION', NULL, '116.96.175.216', 'NguyenHongNgoc', 'QUESTION name=T6.Câu 29a. Thay đổi lề của trang văn bản là thao tác:');
+INSERT INTO `event_logs` VALUES (2060, '2019-10-22 16:05:32', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2061, '2019-11-06 15:42:02', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLTOPIC');
+INSERT INTO `event_logs` VALUES (2062, '2019-11-06 15:45:08', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLEXAM');
+INSERT INTO `event_logs` VALUES (2063, '2019-11-06 15:50:03', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2064, '2019-11-06 16:25:36', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2065, '2019-11-06 16:27:03', 425, 'UPDATE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2066, '2019-11-06 16:28:07', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLANSWER');
+INSERT INTO `event_logs` VALUES (2067, '2019-11-06 16:28:10', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLANSWER');
+INSERT INTO `event_logs` VALUES (2068, '2019-11-06 16:28:11', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLANSWER');
+INSERT INTO `event_logs` VALUES (2069, '2019-11-06 16:28:13', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLANSWER');
+INSERT INTO `event_logs` VALUES (2070, '2019-11-06 16:29:02', 425, 'UPDATE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2071, '2019-11-06 16:30:08', 425, 'UPDATE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2072, '2019-11-06 16:30:33', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2073, '2019-11-06 16:31:26', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2074, '2019-11-06 16:31:42', 425, 'UPDATE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2075, '2019-11-06 16:32:03', 425, 'UPDATE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2076, '2019-11-06 16:33:24', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2077, '2019-11-08 03:50:07', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2078, '2019-11-08 08:40:19', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2079, '2019-11-08 08:40:19', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2080, '2019-11-08 08:40:50', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2081, '2019-11-08 08:40:53', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2082, '2019-11-08 09:50:27', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2083, '2019-11-08 09:50:27', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2084, '2019-11-08 09:50:52', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2085, '2019-11-08 09:51:00', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2086, '2019-11-08 09:51:02', 425, 'DELETE', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'DELETE_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2087, '2019-11-08 09:51:37', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2088, '2019-11-08 09:51:37', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2089, '2019-11-21 00:54:54', 425, 'INSERT', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'INSERT_TBLQUESTION');
+INSERT INTO `event_logs` VALUES (2090, '2019-12-16 08:47:24', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2091, '2019-12-16 08:47:24', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2092, '2019-12-16 12:41:56', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2093, '2019-12-16 12:41:56', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2094, '2019-12-17 10:44:30', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2095, '2019-12-17 10:44:30', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
+INSERT INTO `event_logs` VALUES (2096, '2019-12-19 15:40:52', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=123');
+INSERT INTO `event_logs` VALUES (2097, '2019-12-19 15:40:52', 425, 'ADD_TBL_QUESTION', NULL, '0:0:0:0:0:0:0:1', 'admin123', 'QUESTION name=456');
 
 -- ----------------------------
 -- Table structure for exam_result
@@ -2111,7 +2149,7 @@ CREATE TABLE `exam_result`  (
   `exam_year` int(4) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `3434`(`exam_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1030 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 1040 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of exam_result
@@ -3145,6 +3183,16 @@ INSERT INTO `exam_result` VALUES (1026, 76, 24, 5, '2019-04-22 23:34:04', 3, 201
 INSERT INTO `exam_result` VALUES (1027, 76, 24, 0, '2019-04-22 23:37:56', 3, 2019);
 INSERT INTO `exam_result` VALUES (1028, 77, 24, 10, '2019-04-22 23:51:32', 3, 2019);
 INSERT INTO `exam_result` VALUES (1029, 79, 24, 1, '2019-04-23 00:56:39', 3, 2019);
+INSERT INTO `exam_result` VALUES (1030, 15, 427, 3, '2019-10-20 23:10:06', 9, 2019);
+INSERT INTO `exam_result` VALUES (1031, 60, 427, 1, '2019-10-22 15:47:39', 9, 2019);
+INSERT INTO `exam_result` VALUES (1032, 76, 427, 1, '2019-10-22 16:00:28', 9, 2019);
+INSERT INTO `exam_result` VALUES (1033, 84, 427, 10, '2019-11-06 15:51:31', 10, 2019);
+INSERT INTO `exam_result` VALUES (1034, 84, 427, 10, '2019-11-06 15:52:23', 10, 2019);
+INSERT INTO `exam_result` VALUES (1035, 15, 427, 1, '2019-11-06 16:23:01', 10, 2019);
+INSERT INTO `exam_result` VALUES (1036, 84, 427, 5, '2019-11-06 16:27:10', 10, 2019);
+INSERT INTO `exam_result` VALUES (1037, 84, 427, 3, '2019-11-06 16:34:13', 10, 2019);
+INSERT INTO `exam_result` VALUES (1038, 84, 427, 7, '2019-11-20 14:45:27', 10, 2019);
+INSERT INTO `exam_result` VALUES (1039, 84, 427, 0, '2019-11-21 01:02:03', 10, 2019);
 
 -- ----------------------------
 -- Table structure for tbl_answer
@@ -3158,7 +3206,7 @@ CREATE TABLE `tbl_answer`  (
   `is_true` bit(1) NULL DEFAULT NULL,
   PRIMARY KEY (`answer_id`) USING BTREE,
   INDEX `iooio`(`question_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4753 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 4890 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_answer
@@ -6463,6 +6511,63 @@ INSERT INTO `tbl_answer` VALUES (4805, 'A. Định dạng văn bản', 1225, NUL
 INSERT INTO `tbl_answer` VALUES (4806, 'B. Lưu tệp văn bản', 1225, NULL, NULL);
 INSERT INTO `tbl_answer` VALUES (4807, 'C. Trình bày trang', 1225, NULL, NULL);
 INSERT INTO `tbl_answer` VALUES (4808, 'D. Không có đáp án', 1225, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4817, 'A. Nếu  f ′ ( x ) ≥ 0 , ∀ x ∈ K  thì hàm số f(x) đồng biến trên K ', 1228, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4818, 'B. Nếu  f ′ ( x ) > 0 , ∀ x ∈ K  thì hàm số f(x) nghịch biến trên K. ', 1228, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4819, 'C. Nếu  f ′ ( x ) > 0 , ∀ x ∈ K  thì hàm số f(x) đồng biến trên K  ', 1228, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4820, 'D. Nếu  f ′ ( x ) ≤ 0 , ∀ x ∈ K  thì hàm số nghịch biến trên K.  ', 1228, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4821, 'A. Hàm số  luôn nghịch biến', 1229, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4822, 'B. Hàm số luôn đồng biến', 1229, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4823, 'C. Hàm số đạt cực đại tại x = 1', 1229, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4824, 'D. Hàm số đạt cực tiểu tại x = 1 ', 1229, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4825, 'A. Hàm số  luôn nghịch biến', 1230, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4826, 'B. Hàm số luôn đồng biến', 1230, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4827, 'C. Hàm số đạt cực đại tại x = 1', 1230, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4828, 'D. Hàm số đạt cực tiểu tại x = 1', 1230, NULL, b'0');
+INSERT INTO `tbl_answer` VALUES (4841, '1', 1234, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4842, '2', 1234, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4843, '3', 1234, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4844, '4', 1234, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4849, '1', 1236, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4850, '2', 1236, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4851, '3', 1236, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4852, '4', 1236, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4853, '5', 1237, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4854, '6', 1237, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4855, '7', 1237, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4856, '8', 1237, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4857, '12', 1238, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4858, '1', 1239, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4859, '2', 1239, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4860, '3', 1239, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4861, '4', 1239, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4862, '5', 1240, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4863, '6', 1240, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4864, '7', 1240, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4865, '8', 1240, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4866, '1', 1241, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4867, '2', 1241, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4868, '3', 1241, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4869, '4', 1241, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4870, '5', 1242, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4871, '6', 1242, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4872, '7', 1242, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4873, '8', 1242, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4874, '1', 1243, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4875, '2', 1243, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4876, '3', 1243, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4877, '4', 1243, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4878, '5', 1244, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4879, '6', 1244, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4880, '7', 1244, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4881, '8', 1244, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4882, '1', 1245, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4883, '2', 1245, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4884, '3', 1245, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4885, '4', 1245, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4886, '5', 1246, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4887, '6', 1246, NULL, b'1');
+INSERT INTO `tbl_answer` VALUES (4888, '7', 1246, NULL, NULL);
+INSERT INTO `tbl_answer` VALUES (4889, '8', 1246, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for tbl_comment
@@ -6541,6 +6646,7 @@ INSERT INTO `tbl_division` VALUES (51, 'Giải trí', '002', 10, 10, 'Danh mục
 INSERT INTO `tbl_division` VALUES (53, '30 phút', '004', 30, 7, 'Danh mục thời gian thi', 17, NULL);
 INSERT INTO `tbl_division` VALUES (54, 'Văn', '002', 11, 11, 'Danh mục môn học', 17, NULL);
 INSERT INTO `tbl_division` VALUES (55, '20 phút', '004', 20, 8, 'Danh mục thời gian thi', 17, NULL);
+INSERT INTO `tbl_division` VALUES (56, 'hóa học', NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for tbl_exam
@@ -6556,7 +6662,7 @@ CREATE TABLE `tbl_exam`  (
   `user_created` bigint(20) NULL DEFAULT NULL,
   PRIMARY KEY (`exam_id`) USING BTREE,
   INDEX `33`(`user_created`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 80 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 85 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_exam
@@ -6565,7 +6671,7 @@ INSERT INTO `tbl_exam` VALUES (14, 'Bộ câu hỏi Trắc nghiệm ôn tập b�
 INSERT INTO `tbl_exam` VALUES (15, 'Trắc nghiệm Địa lí 9 Phần Địa Lý Dân cư', '<p>Bộ c&acirc;u hỏi Trắc nghiệm Địa l&iacute; 9 Phần Địa L&yacute; D&acirc;n cư</p>\r\n\r\n<p>Gồm 35 c&acirc;u hỏi trắc nghiệm cơ bản</p>\r\n', '2019-02-19 00:00:00', 1, 5, NULL);
 INSERT INTO `tbl_exam` VALUES (16, 'Đề kiểm tra 15 phút Công dân 9', '<p>Gồm 10 c&acirc;u hỏi trắc nghiệm</p>\r\n', '2019-03-01 13:08:16', 6, 8, NULL);
 INSERT INTO `tbl_exam` VALUES (20, 'Đề kiểm tra 15 phút Địa Lý 9', '<p>Gồm 10 c&acirc;u hỏi trắc nghiệm cơ bản phần Địa L&yacute; D&acirc;n cư</p>\r\n\r\n<p>Thời gian: 15 ph&uacute;t</p>\r\n', '2019-03-05 07:28:40', 6, 5, NULL);
-INSERT INTO `tbl_exam` VALUES (22, 'Bộ câu hỏi Ôn tập Vật Lý 9 Học kì II', '<p>Gồm 30 c&acirc;u trắc nghiệm</p>\r\n\r\n<p>Thời gian: 45 ph&uacute;t</p>\r\n', '2019-03-05 08:20:08', 1, 4, NULL);
+INSERT INTO `tbl_exam` VALUES (22, 'Bộ câu hỏi Ôn tập Vật Lý 9 Học kì II', '<p>Gồm 30 câu trắc nghiệm</p><p>Thời gian: 45 phút</p><p>&nbsp;</p>', '2019-03-04 00:00:00', 1, 4, NULL);
 INSERT INTO `tbl_exam` VALUES (45, 'Bộ câu hỏi trắc nghiệm Lịch Sử Phần 1b', '<p>Gồm 25 c&acirc;u hỏi</p>\r\n\r\n<p>Thời gian: 30 ph&uacute;t</p>\r\n', '2019-03-11 00:00:00', 7, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (46, 'Bộ câu hỏi trắc nghiệm Lịch Sử Phần II', '<p>Gồm 25 c&acirc;u hỏi tắc nghiệm</p>\r\n\r\n<p>Thời gian: 30 ph&uacute;t</p>\r\n', '2019-03-11 00:00:00', 7, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (47, 'Bộ câu hỏi trắc nghiệm Lịch Sử Phần III', '<p>Gồm 25 c&acirc;u hỏi</p>\r\n\r\n<p>Thời gian: 30 ph&uacute;t</p>\r\n', '2019-03-12 18:24:22', 7, 7, NULL);
@@ -6580,13 +6686,15 @@ INSERT INTO `tbl_exam` VALUES (62, 'Lịch Sử Câu hỏi Nhận biết Phần 
 INSERT INTO `tbl_exam` VALUES (65, 'Lịch Sử Câu hỏi Nhận biết Phần VII', '<p>Gồm 20 c&acirc;u</p>\r\n', '2019-03-29 23:31:17', 6, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (66, 'Lịch Sử Câu hỏi Thông Hiểu Phần I', '<p>Gồm 30 c&acirc;u hỏi trắc nghiệm</p>\r\n', '2019-04-16 00:00:00', 8, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (67, 'Lịch Sử Câu Hỏi Thông Hiểu Phần II', '<p>Gồm 30 c&acirc;u trắc nghiệm</p>\r\n', '2019-04-16 17:14:44', 8, 7, NULL);
-INSERT INTO `tbl_exam` VALUES (68, 'Lịch Sử Câu Hỏi Thông Hiểu Phần III', '<p>Gồm 38 c&acirc;u hỏi</p>\r\n', '2019-04-16 17:18:00', 7, 7, NULL);
+INSERT INTO `tbl_exam` VALUES (68, 'Lịch Sử Câu Hỏi Thông Hiểu Phần III', '<p>Gồm 38 câu hỏi</p>', '2019-04-15 00:00:00', 7, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (75, 'Lịch Sử Câu hỏi Nhận biết Phần VI', '<p>Gồm 30 c&acirc;u hỏi trắc nghiệm</p>\r\n', '2019-04-22 23:13:30', 8, 7, NULL);
 INSERT INTO `tbl_exam` VALUES (76, 'Tin học 7 - Test thử nghiệm', '<p>Gồm 15 c&acirc;u</p>\r\n', '2019-04-22 00:00:00', 6, 9, NULL);
 INSERT INTO `tbl_exam` VALUES (77, 'Test Sinh học 8', '<p>Gồm&nbsp;15 c&acirc;u hỏi</p>\r\n\r\n<p>Thời gian: 15 ph&uacute;t</p>\r\n', '2019-04-22 00:00:00', 6, 9, NULL);
 INSERT INTO `tbl_exam` VALUES (78, 'TA9 - Vocabulary anh Gramma Phần 1', '<p>Gồm 20 c&acirc;u hỏi</p>\r\n', '2019-04-23 00:04:10', 8, 6, NULL);
 INSERT INTO `tbl_exam` VALUES (79, 'Tin học 6 - Đề 01', '<p>Gồm 15 c&acirc;u</p>\r\n', '2019-04-23 00:08:14', 6, 9, NULL);
 INSERT INTO `tbl_exam` VALUES (80, 'Tin học 6 - Đề 02', '<p>Gồm 15 c&acirc;u hỏi trắc nghiệm</p>\r\n', '2019-04-23 07:31:30', 6, 9, NULL);
+INSERT INTO `tbl_exam` VALUES (83, 'Đề thi Toán', '<p>Toán</p><p>1</p>', '2019-10-13 00:00:00', NULL, NULL, NULL);
+INSERT INTO `tbl_exam` VALUES (84, 'Đề Thi Toán 12', '<p>abc</p>\r\n', '2019-11-06 15:45:08', 6, 1, NULL);
 
 -- ----------------------------
 -- Table structure for tbl_exam_question
@@ -6599,7 +6707,7 @@ CREATE TABLE `tbl_exam_question`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `11`(`exam_id`) USING BTREE,
   INDEX `1212`(`question_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1776 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 1799 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_exam_question
@@ -6800,39 +6908,6 @@ INSERT INTO `tbl_exam_question` VALUES (283, 21, 219);
 INSERT INTO `tbl_exam_question` VALUES (284, 21, 236);
 INSERT INTO `tbl_exam_question` VALUES (285, 21, 242);
 INSERT INTO `tbl_exam_question` VALUES (286, 21, 157);
-INSERT INTO `tbl_exam_question` VALUES (287, 22, 182);
-INSERT INTO `tbl_exam_question` VALUES (288, 22, 183);
-INSERT INTO `tbl_exam_question` VALUES (289, 22, 206);
-INSERT INTO `tbl_exam_question` VALUES (290, 22, 206);
-INSERT INTO `tbl_exam_question` VALUES (291, 22, 210);
-INSERT INTO `tbl_exam_question` VALUES (292, 22, 215);
-INSERT INTO `tbl_exam_question` VALUES (293, 22, 215);
-INSERT INTO `tbl_exam_question` VALUES (294, 22, 218);
-INSERT INTO `tbl_exam_question` VALUES (295, 22, 219);
-INSERT INTO `tbl_exam_question` VALUES (296, 22, 236);
-INSERT INTO `tbl_exam_question` VALUES (297, 22, 236);
-INSERT INTO `tbl_exam_question` VALUES (298, 22, 237);
-INSERT INTO `tbl_exam_question` VALUES (299, 22, 238);
-INSERT INTO `tbl_exam_question` VALUES (300, 22, 242);
-INSERT INTO `tbl_exam_question` VALUES (301, 22, 245);
-INSERT INTO `tbl_exam_question` VALUES (302, 22, 248);
-INSERT INTO `tbl_exam_question` VALUES (303, 22, 151);
-INSERT INTO `tbl_exam_question` VALUES (304, 22, 154);
-INSERT INTO `tbl_exam_question` VALUES (305, 22, 157);
-INSERT INTO `tbl_exam_question` VALUES (306, 22, 159);
-INSERT INTO `tbl_exam_question` VALUES (307, 22, 160);
-INSERT INTO `tbl_exam_question` VALUES (308, 22, 164);
-INSERT INTO `tbl_exam_question` VALUES (309, 22, 165);
-INSERT INTO `tbl_exam_question` VALUES (310, 22, 166);
-INSERT INTO `tbl_exam_question` VALUES (311, 22, 167);
-INSERT INTO `tbl_exam_question` VALUES (312, 22, 168);
-INSERT INTO `tbl_exam_question` VALUES (313, 22, 169);
-INSERT INTO `tbl_exam_question` VALUES (314, 22, 170);
-INSERT INTO `tbl_exam_question` VALUES (315, 22, 171);
-INSERT INTO `tbl_exam_question` VALUES (316, 22, 172);
-INSERT INTO `tbl_exam_question` VALUES (317, 22, 173);
-INSERT INTO `tbl_exam_question` VALUES (318, 22, 174);
-INSERT INTO `tbl_exam_question` VALUES (319, 22, 175);
 INSERT INTO `tbl_exam_question` VALUES (320, 23, 294);
 INSERT INTO `tbl_exam_question` VALUES (321, 23, 295);
 INSERT INTO `tbl_exam_question` VALUES (322, 23, 296);
@@ -7737,6 +7812,14 @@ INSERT INTO `tbl_exam_question` VALUES (1787, 80, 1223);
 INSERT INTO `tbl_exam_question` VALUES (1788, 80, 1224);
 INSERT INTO `tbl_exam_question` VALUES (1789, 80, 1225);
 INSERT INTO `tbl_exam_question` VALUES (1790, 80, 1196);
+INSERT INTO `tbl_exam_question` VALUES (1791, 84, 1227);
+INSERT INTO `tbl_exam_question` VALUES (1792, 84, 1228);
+INSERT INTO `tbl_exam_question` VALUES (1793, 84, 1229);
+INSERT INTO `tbl_exam_question` VALUES (1794, 84, 1230);
+INSERT INTO `tbl_exam_question` VALUES (1795, 22, 162);
+INSERT INTO `tbl_exam_question` VALUES (1796, 22, 163);
+INSERT INTO `tbl_exam_question` VALUES (1797, 22, 181);
+INSERT INTO `tbl_exam_question` VALUES (1798, 22, 178);
 
 -- ----------------------------
 -- Table structure for tbl_file
@@ -7751,6 +7834,25 @@ CREATE TABLE `tbl_file`  (
   `description` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for tbl_level
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_level`;
+CREATE TABLE `tbl_level`  (
+  `level_id` bigint(20) NOT NULL,
+  `level_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`level_id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tbl_level
+-- ----------------------------
+INSERT INTO `tbl_level` VALUES (1, 'Dễ', 'dễ ');
+INSERT INTO `tbl_level` VALUES (2, 'Trung bình', 'trung bình');
+INSERT INTO `tbl_level` VALUES (4, 'Khó', 'kho');
+INSERT INTO `tbl_level` VALUES (5, 'Cực Khó', 'cuc kho');
 
 -- ----------------------------
 -- Table structure for tbl_news
@@ -7768,7 +7870,7 @@ CREATE TABLE `tbl_news`  (
   PRIMARY KEY (`new_id`) USING BTREE,
   INDEX `jgjghj`(`user_created`) USING BTREE,
   INDEX `76575`(`topic_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_news
@@ -7787,8 +7889,9 @@ INSERT INTO `tbl_news` VALUES (15, 'Đại số 8. Phân thức Đại số', NU
 INSERT INTO `tbl_news` VALUES (17, 'Trắc nghiệm IQ Test', NULL, '2019-01-17 00:00:00', 34, NULL, '<h2><a href=\"https://testiq.vn/\">Test IQ</a></h2>\r\n\r\n<p>- Số c&acirc;u hỏi: 26 c&acirc;u.</p>\r\n\r\n<p>- Thời gian: 24 ph&uacute;t.</p>\r\n\r\n<p>- Ph&acirc;n bố của b&agrave;i&nbsp;<a href=\"https://testiq.vn/iq-test.html\">IQ Test</a>: từ dễ đến kh&oacute;.</p>\r\n\r\n<p>- Nội dung: 100% l&agrave; h&igrave;nh ảnh, c&ocirc;ng bằng với tất cả mọi người bất kể thuộc quốc gia n&agrave;o, d&ugrave; c&oacute; đi học hay kh&ocirc;ng.</p>\r\n\r\n<p>Bạn đ&atilde; sẵn s&agrave;ng?!</p>\r\n\r\n<p>Truy cập v&agrave;o trang Web:&nbsp; &nbsp; &nbsp;<a href=\"https://testiq.vn/\">Test IQ</a></p>\r\n', NULL);
 INSERT INTO `tbl_news` VALUES (18, 'Bài 1. Căn bậc hai', NULL, '2019-03-05 00:00:00', 39, NULL, '<h2>T&igrave;m căn bậc hai số học của một số</h2>\r\n\r\n<p><strong>A. Phương ph&aacute;p giải</strong></p>\r\n\r\n<p>Dựa v&agrave;o định nghĩa căn bậc hai số học của một số kh&ocirc;ng &acirc;m:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/chu-de-1.PNG\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>B. V&iacute; dụ</strong></p>\r\n\r\n<p><strong>V&iacute; dụ 1:</strong>&nbsp;T&igrave;m căn bậc hai số học rồi t&igrave;m căn bậc hai của:</p>\r\n\r\n<p>a, 121</p>\r\n\r\n<p>b, (-5/6)^2</p>\r\n\r\n<p><strong>Lời giải:</strong></p>\r\n\r\n<p>a, Ta c&oacute; &radic;121 = 11 v&igrave; 11 &ge; 0 v&agrave; 112&nbsp;= 121.</p>\r\n\r\n<p>Do đ&oacute; 121 c&oacute; hai căn bậc hai l&agrave; 11 v&agrave; -11.</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/vi-du-1.PNG\" /></p>\r\n', NULL);
 INSERT INTO `tbl_news` VALUES (19, 'Bài 1. Một số hệ thức lượng trong tam giác vuông', NULL, '2019-03-05 00:00:00', 41, NULL, '<h2><strong>Một số hệ thức về cạnh v&agrave; đường cao trong tam gi&aacute;c vu&ocirc;ng</strong></h2>\r\n\r\n<p><strong>A. Phương ph&aacute;p giải</strong></p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/chu-de-1-chuong-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cho tam gi&aacute;c ABC vu&ocirc;ng g&oacute;c tại A, đường cao AH. Khi đ&oacute; ta c&oacute;:</p>\r\n\r\n<p>1, c2&nbsp;= ac&#39;, b2&nbsp;= ab&#39;</p>\r\n\r\n<p>2, a2&nbsp;= b2&nbsp;+ c2</p>\r\n\r\n<p>3, ah = bc</p>\r\n\r\n<p>4, h2&nbsp;= b&#39;.c&#39;</p>\r\n\r\n<p>5, 1/h2&nbsp;= 1/b2&nbsp;+ 1/c2</p>\r\n\r\n<p><strong>B. B&agrave;i tập tự luận</strong></p>\r\n\r\n<p><strong>B&agrave;i 1:</strong>&nbsp;T&iacute;nh x, y trong c&aacute;c trường hợp sau</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-1-chu-de-1-chuong-1-hinh-hoc-9.PNG\" /><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-1-chu-de-1-chuong-1-hinh-hoc-9-1.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>a, &Aacute;p dụng định l&yacute; py-ta-go v&agrave;o tam gi&aacute;c vu&ocirc;ng ABC c&oacute;:</p>\r\n\r\n<p>BC2= AB2+ AC2</p>\r\n\r\n<p>BC2= 52+ 72</p>\r\n\r\n<p>BC2= 74</p>\r\n\r\n<p>Suy ra BC = &radic;74</p>\r\n\r\n<p>&Aacute;p dụng hệ thức lượng v&agrave;o tam giac vu&ocirc;ng ABC: AB2&nbsp;= BD.BC</p>\r\n\r\n<p>=&gt; BD = AB2/BC =&gt; x = 25/&radic;74</p>\r\n\r\n<p>DC = BC - BD = &radic;74 - 25/&radic;74 = 49/&radic;74</p>\r\n\r\n<p>Vậy x = 25/&radic;74 v&agrave; y = 49/&radic;74</p>\r\n\r\n<p>b) Ta c&oacute;: BC= BD + DC = 2 + 6 = 8</p>\r\n\r\n<p>&Aacute;p dụng hệ thức lượng ta c&oacute;:</p>\r\n\r\n<p>AB2= BD.BC = 2.8 = 16. Suy ra AB = 4 hay x = 4.</p>\r\n\r\n<p>AC2= DC.BC = 6.8 = 48. Suy ra AC = &radic;48 hay y = &radic;48</p>\r\n\r\n<p><strong>B&agrave;i 2:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A, đường cao AH. T&iacute;nh BC, AC, AH biết AB = 15cm, HC = 16cm.</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-2-chu-de-1-chuong-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&Aacute;p dụng hệ thức lượng trong tam gi&aacute;c vu&ocirc;ng ABC c&oacute;:</p>\r\n\r\n<p>AC2&nbsp;= CH.BC = 16.BC</p>\r\n\r\n<p>AB2&nbsp;+ AC2&nbsp;= BC2</p>\r\n\r\n<p>&hArr; 152&nbsp;+ 16.BC = BC2</p>\r\n\r\n<p>&hArr; BC2&nbsp;- 16.BC - 225 = 0</p>\r\n\r\n<p>&hArr; BC2&nbsp;- 25BC + 9BC - 225 = 0</p>\r\n\r\n<p>&hArr; BC(BC - 25) + 9(BC - 25) = 0</p>\r\n\r\n<p>&hArr; (BC - 25)(BC + 9) = 0</p>\r\n\r\n<p>&hArr; BC = 25 hoặc BC = -9(loại)</p>\r\n\r\n<p>=&gt; AC2&nbsp;= 16.BC = 16.25 = 400</p>\r\n\r\n<p>=&gt; AC = 20</p>\r\n\r\n<p>+ X&eacute;t tam gi&aacute;c vu&ocirc;ng ABC c&oacute;: AH.BC = AB.AC (hệ thức lượng)</p>\r\n\r\n<p>Vậy BC=25(cm); AC=20(cm); AH=12(cm)</p>\r\n\r\n<p><strong>B&agrave;i 3:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; AB = 48cm, BC = 50cm, AC = 14cm. T&iacute;nh độ d&agrave;i ph&acirc;n gi&aacute;c gi&aacute;c g&oacute;c C</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-3-chu-de-1-chuong-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c ABC, ta c&oacute;</p>\r\n\r\n<p>BC2&nbsp;= 502&nbsp;= 2500</p>\r\n\r\n<p>AB2&nbsp;+ AC2&nbsp;= 142&nbsp;+ 482&nbsp;= 2500</p>\r\n\r\n<p>=&gt; BC2&nbsp;= AB2&nbsp;+ AC2</p>\r\n\r\n<p>=&gt; Tam gi&aacute;c ABC vu&ocirc;ng tại A</p>\r\n\r\n<p>C&oacute; DA/DB = CA/CB = 14/50 = 7/25 (t&iacute;nh chất tia ph&acirc;n gi&aacute;c)</p>\r\n\r\n<p>=&gt; DB = 25/7 DA.</p>\r\n\r\n<p>Ta c&oacute; DA + DB = AB</p>\r\n\r\n<p>&hArr; DA + 25/7 DA = AB &hArr; DA. 32/7 = 48 &hArr; DA = 10,5cm</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng ACD, theo đinh l&iacute; Pi-ta-go ta c&oacute;</p>\r\n\r\n<p>CD2&nbsp;= AC2&nbsp;+ AD2&nbsp;= 142&nbsp;+ 10,52&nbsp;= 306,25 =&gt; CD = 17,5cm</p>\r\n\r\n<p><strong>B&agrave;i 4:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A, AB=24cm, AC=32cm. Đường trung trực của BC cắt AC, BC theo thứ tự D v&agrave; E. T&iacute;nh DE.</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-4-chu-de-1-chuong-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng ABC, ta c&oacute;:</p>\r\n\r\n<p>BC2&nbsp;= AB2+ AC2&nbsp;( theo định l&yacute; py-ta-go)</p>\r\n\r\n<p>BC2&nbsp;= 242+ 322</p>\r\n\r\n<p>BC2&nbsp;= 1600</p>\r\n\r\n<p>BC = 40(cm)</p>\r\n\r\n<p>EC = BC : 2 = 40 : 2 = 20(cm)</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng ACB v&agrave; tam gi&aacute;c vu&ocirc;ng ECD c&oacute;:</p>\r\n\r\n<p>C&oacute; &ang;A = &ang;E = 90o</p>\r\n\r\n<p>&ang;C chung</p>\r\n\r\n<p>=&gt; Tam gi&aacute;c ACB = tam gi&aacute;c ECD (g.g)</p>\r\n\r\n<p>=&gt; AC/EC = AB/ED</p>\r\n\r\n<p>=&gt; ED = AB.EC/AC = 15cm</p>\r\n\r\n<p>Vậy ED = 15cm</p>\r\n', NULL);
-INSERT INTO `tbl_news` VALUES (20, 'Bài 2. Bài tập trắc nghiệm áp dụng Hệ thức lượng trong tam giác vuông', NULL, '2019-03-05 08:10:41', 41, NULL, '<h2>B&agrave;i tập trắc nghiệm Hệ thức lượng trong tam gi&aacute;c vu&ocirc;ng</h2>\r\n\r\n<p><strong>C&acirc;u 1:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A c&oacute; đường cao AH xuất ph&aacute;t từ A v&agrave; AB=3; AC=4. T&iacute;nh độ d&agrave;i đoạn AH</p>\r\n\r\n<p>A. 2,5 cm&nbsp;&nbsp;&nbsp;B. 3cm&nbsp;&nbsp;&nbsp;C. 2,4cm&nbsp;&nbsp;&nbsp;D. 2cm</p>\r\n\r\n<p><strong>C&acirc;u 2:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A, c&oacute; AB=9cm, AC=12cm. Độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p>A. 7,2 cm&nbsp;&nbsp;&nbsp;B. 5cm&nbsp;&nbsp;&nbsp;C. 6,4 cm&nbsp;&nbsp;&nbsp;D. 5,4cm</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>C&acirc;u 3:</strong>&nbsp;Cho tam giac ABC vu&ocirc;ng tại A c&oacute; AB=2cm, AC=4cm. Độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-3-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 4:</strong>&nbsp;Tam gi&aacute;c ABC vu&ocirc;ng tại A, c&oacute; AB=2cm, AC=3cm. Khi đ&oacute; độ d&agrave;i đường cao AH bằng:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-4-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 5:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; AH l&agrave; đường cao xuất ph&aacute;t từ A, hệ thức n&agrave;o dưới đ&acirc;y chứng tỏ tam gi&aacute;c ABC vu&ocirc;ng tại A</p>\r\n\r\n<p>A. BC2&nbsp;= AB2&nbsp;+ AC2</p>\r\n\r\n<p>B. AH2&nbsp;= HB.HC</p>\r\n\r\n<p>C. AB2&nbsp;= BH.BC</p>\r\n\r\n<p>D. A, B, C đều đ&uacute;ng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>C&acirc;u 6:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; đường cao xuất ph&aacute;t từ A. Nếu &ang;BAC = 90o&nbsp;th&igrave; hệ thức n&agrave;o dưới đ&acirc;y đ&uacute;ng?</p>\r\n\r\n<p>A. BC2&nbsp;= AB2+AC2</p>\r\n\r\n<p>B. AH2&nbsp;= HB.HC</p>\r\n\r\n<p>C. AB2&nbsp;= BH.BC</p>\r\n\r\n<p>D. A, B, C đều đ&uacute;ng.</p>\r\n\r\n<p><strong>C&acirc;u 7:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; v&agrave; AH l&agrave; đường cao xuất ph&aacute;t từ A. C&acirc;u n&agrave;o sau đ&acirc;y l&agrave; đ&uacute;ng?</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-7-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 8:</strong>&nbsp;Tam gi&aacute;c ABC vu&ocirc;ng c&oacute; đường cao AH( H thuộc cạnh BC). H&igrave;nh chiếu của H tr&ecirc;n AB l&agrave; D, tr&ecirc;n AC l&agrave; E. C&acirc;u n&agrave;o sau đ&acirc;y sai:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-8-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 9:</strong>&nbsp;Cho tam gi&aacute;c ABC nội tiếp đường tr&ograve;n đường k&iacute;nh BC=10cm. Cạnh AB=5cm, th&igrave; độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-9-dang-1-hinh-hoc-9.PNG\" /></p>\r\n', NULL);
-INSERT INTO `tbl_news` VALUES (21, 'Bài 1. Liên hệ giữa dây và khoảng cách từ tâm đến dây', NULL, '2019-03-05 08:13:50', 42, NULL, '<h2><strong>Li&ecirc;n hệ giữa d&acirc;y v&agrave; khoảng c&aacute;ch từ t&acirc;m đến d&acirc;y</strong></h2>\r\n\r\n<p><strong>A. Phương ph&aacute;p giải</strong></p>\r\n\r\n<p>Định l&yacute;: Trong một đường tr&ograve;n:</p>\r\n\r\n<p>- Hai d&acirc;y cung bằng nhau th&igrave; c&aacute;ch đều t&acirc;m,</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Hai d&acirc;y cung c&aacute;ch đều t&acirc;m th&igrave; bằng nhau.</p>\r\n\r\n<p>- D&acirc;y cung n&agrave;o lớn hơn th&igrave; gần t&acirc;m hơn.</p>\r\n\r\n<p>- D&acirc;y cung gần t&acirc;m hơn th&igrave; lớn hơn.</p>\r\n\r\n<p><strong>B. B&agrave;i tập tự luận</strong></p>\r\n\r\n<p><strong>B&agrave;i 1:</strong>&nbsp;Cho h&igrave;nh vẽ sau, trong đ&oacute; MN=PQ. Chứng minh rằng:</p>\r\n\r\n<p>a, AE=AF</p>\r\n\r\n<p>b, AN=AQ.</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-1-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>V&igrave; MN=PQ n&ecirc;n OE=OF( theo định l&yacute; li&ecirc;n hệ giữa d&acirc;y v&agrave; khoảng c&aacute;ch từ t&acirc;m đến d&acirc;y)</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng AOE v&agrave; tam gi&aacute;c vu&ocirc;ng AOF c&oacute;:</p>\r\n\r\n<p>OE=OF ( chứng minh tr&ecirc;n)</p>\r\n\r\n<p>AO: chung</p>\r\n\r\n<p>Suy ra &Delta;AOE = &Delta;AOF ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>Suy ra AE=AF( 2 cạnh tương ứng)(1)</p>\r\n\r\n<p>V&igrave; OE&perp;MN n&ecirc;n ME=NE (t&iacute;nh chất đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>V&igrave; OF&perp;PQ n&ecirc;n PF=QF (t&iacute;nh chất đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>M&agrave; MN=PQ</p>\r\n\r\n<p>Suy ra ME=NE=PF=QF.(2)</p>\r\n\r\n<p>Từ (1) v&agrave; (2) suy ra AN=AQ.</p>\r\n\r\n<p><strong>B&agrave;i 2:</strong>&nbsp;Cho đường tr&ograve;n(O), d&acirc;y AB v&agrave; d&acirc;y CD, AB &lt; CD. Giao điểm K của c&aacute;c đường thẳng AB, CD nằm ngo&agrave;i đường tr&ograve;n. Đường tr&ograve;n (O;OK) cắt KA v&agrave; KC tại M v&agrave; N.</p>\r\n\r\n<p>Chứng minh KM &lt; KN.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-2-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>Kẻ OI &perp;AB, OE &perp; CD.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n (O;OA) c&oacute;: AB v&agrave; CD l&agrave; d&acirc;y cung, AB &lt; CD. Suy ra OI &gt; OE.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n (O;OK) c&oacute; KN v&agrave; KM l&agrave; d&acirc;y cung v&agrave; OI &gt; OE. Suy ra KM &lt; KN.</p>\r\n\r\n<p><strong>B&agrave;i 3:</strong>&nbsp;Cho đường tr&ograve;n (O), hai d&acirc;y AB, CD bằng nhau v&agrave; cắt nhau tại điểm I nằm b&ecirc;n trong đường tr&ograve;n. Chứng minh rằng:</p>\r\n\r\n<p>a, IO l&agrave; tia ph&acirc;n gi&aacute;c của một trong hai g&oacute;c tạo bởi hai d&acirc;y AB v&agrave; CD.</p>\r\n\r\n<p>b, Điểm I chia AB, CD th&agrave;nh c&aacute;c đoạn thẳng bằng nhau đ&ocirc;i một.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-3-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>a, Kẻ OH &perp; AB; OK &perp; CD.</p>\r\n\r\n<p>V&igrave; CD=AB n&ecirc;n OK=OH.</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng IKO v&agrave; tam giac vu&ocirc;ng IOH ta c&oacute;:</p>\r\n\r\n<p>OK=OH</p>\r\n\r\n<p>IO: chung</p>\r\n\r\n<p>Suy ra &Delta; IKO = &Delta;IOH ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; &ang;KIO = &ang;OIH ( 2 g&oacute;c tương ứng)</p>\r\n\r\n<p>Suy ra OI l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c BID</p>\r\n\r\n<p>b, Theo c&acirc;u a, &Delta; IKO = &Delta;IOH ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; IH=IK.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O), ta c&oacute;: OK &perp; CD n&ecirc;n suy ra CK=KD( định l&yacute; về đường k&iacute;nh v&agrave; d&acirc;y) (1)</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O), ta c&oacute;: OH &perp; AB n&ecirc;n suy ra AH=HB (định l&yacute; về đường k&iacute;nh v&agrave; d&acirc;y) (2)</p>\r\n\r\n<p>Từ (1) v&agrave; (2) ta c&oacute;: CK=AH</p>\r\n\r\n<p>Mặt kh&aacute;c, IH=IK</p>\r\n\r\n<p>Suy ra AI=CI</p>\r\n\r\n<p>V&igrave; CD=AB, m&agrave; AI=CI(chứng minh tr&ecirc;n) n&ecirc;n ta suy ra ID=IB.</p>\r\n\r\n<p><strong>B&agrave;i 4:</strong>&nbsp;Cho đường tr&ograve;n (O), c&aacute;c b&aacute;n k&iacute;nh OA v&agrave; OB. Tr&ecirc;n cung nhỏ AB lấy c&aacute;c điểm M v&agrave; N sao cho AM=BN. Gọi C l&agrave; giao điểm của c&aacute;c đường thẳng AM v&agrave; BN. Chứng minh rằng:</p>\r\n\r\n<p>a, OC l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c AOB.</p>\r\n\r\n<p>b, OC vu&ocirc;ng g&oacute;c AB.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-4-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O) c&oacute; AM=BN</p>\r\n\r\n<p>Từ đ&oacute; ta suy ra OE=OD (t&iacute;nh chất quan hệ giữa đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng AOD v&agrave; tam gi&aacute;c vu&ocirc;ng BOE c&oacute;:</p>\r\n\r\n<p>OA=OB(c&ugrave;ng bằng b&aacute;n k&iacute;nh)</p>\r\n\r\n<p>OE=OD(chứng minh tr&ecirc;n)</p>\r\n\r\n<p>=&gt; &Delta;AOD = &Delta;BOE (cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; &ang;O1&nbsp;= &ang;O4&nbsp;(2 g&oacute;c tương ứng)(1)</p>\r\n\r\n<p>Tương tự ta c&oacute;: &ang;O2&nbsp;= &ang;O3&nbsp;(2)</p>\r\n\r\n<p>Ta c&oacute;: &ang;AOC = &ang;O1&nbsp;+ &ang;O2</p>\r\n\r\n<p>&ang;BOC = &ang;O3&nbsp;+ &ang;O4</p>\r\n\r\n<p>Từ (1) v&agrave; (2) ta suy ra &ang;AOC= &ang;BOC</p>\r\n\r\n<p>Suy ra OC l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c AOB.</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c OBF v&agrave; tam gi&aacute;c OAF c&oacute;:</p>\r\n\r\n<p>&ang;AOC = &ang;BOC (chứng minh tr&ecirc;n)</p>\r\n\r\n<p>OA=OB</p>\r\n\r\n<p>OF: chung</p>\r\n\r\n<p>Suy ra &Delta;OBF = &Delta;OAF (c-g-c)</p>\r\n\r\n<p>=&gt; BF=AF( 2 cạnh tương ứng)</p>\r\n\r\n<p>=&gt; OC &perp; AB</p>\r\n', NULL);
+INSERT INTO `tbl_news` VALUES (20, 'Bài 2. Bài tập trắc nghiệm áp dụng Hệ thức lượng trong tam giác vuông', NULL, '2019-03-05 00:00:00', 41, NULL, '<h2>B&agrave;i tập trắc nghiệm Hệ thức lượng trong tam gi&aacute;c vu&ocirc;ng</h2>\r\n\r\n<p><strong>C&acirc;u 1:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A c&oacute; đường cao AH xuất ph&aacute;t từ A v&agrave; AB=3; AC=4. T&iacute;nh độ d&agrave;i đoạn AH</p>\r\n\r\n<p>A. 2,5 cm&nbsp;&nbsp;&nbsp;B. 3cm&nbsp;&nbsp;&nbsp;C. 2,4cm&nbsp;&nbsp;&nbsp;D. 2cm</p>\r\n\r\n<p><strong>C&acirc;u 2:</strong>&nbsp;Cho tam gi&aacute;c ABC vu&ocirc;ng tại A, c&oacute; AB=9cm, AC=12cm. Độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p>A. 7,2 cm&nbsp;&nbsp;&nbsp;B. 5cm&nbsp;&nbsp;&nbsp;C. 6,4 cm&nbsp;&nbsp;&nbsp;D. 5,4cm</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>C&acirc;u 3:</strong>&nbsp;Cho tam giac ABC vu&ocirc;ng tại A c&oacute; AB=2cm, AC=4cm. Độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-3-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 4:</strong>&nbsp;Tam gi&aacute;c ABC vu&ocirc;ng tại A, c&oacute; AB=2cm, AC=3cm. Khi đ&oacute; độ d&agrave;i đường cao AH bằng:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-4-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 5:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; AH l&agrave; đường cao xuất ph&aacute;t từ A, hệ thức n&agrave;o dưới đ&acirc;y chứng tỏ tam gi&aacute;c ABC vu&ocirc;ng tại A</p>\r\n\r\n<p>A. BC2&nbsp;= AB2&nbsp;+ AC2</p>\r\n\r\n<p>B. AH2&nbsp;= HB.HC</p>\r\n\r\n<p>C. AB2&nbsp;= BH.BC</p>\r\n\r\n<p>D. A, B, C đều đ&uacute;ng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>C&acirc;u 6:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; đường cao xuất ph&aacute;t từ A. Nếu &ang;BAC = 90o&nbsp;th&igrave; hệ thức n&agrave;o dưới đ&acirc;y đ&uacute;ng?</p>\r\n\r\n<p>A. BC2&nbsp;= AB2+AC2</p>\r\n\r\n<p>B. AH2&nbsp;= HB.HC</p>\r\n\r\n<p>C. AB2&nbsp;= BH.BC</p>\r\n\r\n<p>D. A, B, C đều đ&uacute;ng.</p>\r\n\r\n<p><strong>C&acirc;u 7:</strong>&nbsp;Cho tam gi&aacute;c ABC c&oacute; v&agrave; AH l&agrave; đường cao xuất ph&aacute;t từ A. C&acirc;u n&agrave;o sau đ&acirc;y l&agrave; đ&uacute;ng?</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-7-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 8:</strong>&nbsp;Tam gi&aacute;c ABC vu&ocirc;ng c&oacute; đường cao AH( H thuộc cạnh BC). H&igrave;nh chiếu của H tr&ecirc;n AB l&agrave; D, tr&ecirc;n AC l&agrave; E. C&acirc;u n&agrave;o sau đ&acirc;y sai:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-8-dang-1-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>C&acirc;u 9:</strong>&nbsp;Cho tam gi&aacute;c ABC nội tiếp đường tr&ograve;n đường k&iacute;nh BC=10cm. Cạnh AB=5cm, th&igrave; độ d&agrave;i đường cao AH l&agrave;:</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/cau-9-dang-1-hinh-hoc-9.PNG\" /></p>\r\n', NULL);
+INSERT INTO `tbl_news` VALUES (21, 'Bài 1. Liên hệ giữa dây và khoảng cách từ tâm đến dây', NULL, '2019-03-05 00:00:00', 42, NULL, '<h2><strong>Li&ecirc;n hệ giữa d&acirc;y v&agrave; khoảng c&aacute;ch từ t&acirc;m đến d&acirc;y</strong></h2>\r\n\r\n<p><strong>A. Phương ph&aacute;p giải</strong></p>\r\n\r\n<p>Định l&yacute;: Trong một đường tr&ograve;n:</p>\r\n\r\n<p>- Hai d&acirc;y cung bằng nhau th&igrave; c&aacute;ch đều t&acirc;m,</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Hai d&acirc;y cung c&aacute;ch đều t&acirc;m th&igrave; bằng nhau.</p>\r\n\r\n<p>- D&acirc;y cung n&agrave;o lớn hơn th&igrave; gần t&acirc;m hơn.</p>\r\n\r\n<p>- D&acirc;y cung gần t&acirc;m hơn th&igrave; lớn hơn.</p>\r\n\r\n<p><strong>B. B&agrave;i tập tự luận</strong></p>\r\n\r\n<p><strong>B&agrave;i 1:</strong>&nbsp;Cho h&igrave;nh vẽ sau, trong đ&oacute; MN=PQ. Chứng minh rằng:</p>\r\n\r\n<p>a, AE=AF</p>\r\n\r\n<p>b, AN=AQ.</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-1-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>V&igrave; MN=PQ n&ecirc;n OE=OF( theo định l&yacute; li&ecirc;n hệ giữa d&acirc;y v&agrave; khoảng c&aacute;ch từ t&acirc;m đến d&acirc;y)</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng AOE v&agrave; tam gi&aacute;c vu&ocirc;ng AOF c&oacute;:</p>\r\n\r\n<p>OE=OF ( chứng minh tr&ecirc;n)</p>\r\n\r\n<p>AO: chung</p>\r\n\r\n<p>Suy ra &Delta;AOE = &Delta;AOF ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>Suy ra AE=AF( 2 cạnh tương ứng)(1)</p>\r\n\r\n<p>V&igrave; OE&perp;MN n&ecirc;n ME=NE (t&iacute;nh chất đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>V&igrave; OF&perp;PQ n&ecirc;n PF=QF (t&iacute;nh chất đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>M&agrave; MN=PQ</p>\r\n\r\n<p>Suy ra ME=NE=PF=QF.(2)</p>\r\n\r\n<p>Từ (1) v&agrave; (2) suy ra AN=AQ.</p>\r\n\r\n<p><strong>B&agrave;i 2:</strong>&nbsp;Cho đường tr&ograve;n(O), d&acirc;y AB v&agrave; d&acirc;y CD, AB &lt; CD. Giao điểm K của c&aacute;c đường thẳng AB, CD nằm ngo&agrave;i đường tr&ograve;n. Đường tr&ograve;n (O;OK) cắt KA v&agrave; KC tại M v&agrave; N.</p>\r\n\r\n<p>Chứng minh KM &lt; KN.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-2-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>Kẻ OI &perp;AB, OE &perp; CD.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n (O;OA) c&oacute;: AB v&agrave; CD l&agrave; d&acirc;y cung, AB &lt; CD. Suy ra OI &gt; OE.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n (O;OK) c&oacute; KN v&agrave; KM l&agrave; d&acirc;y cung v&agrave; OI &gt; OE. Suy ra KM &lt; KN.</p>\r\n\r\n<p><strong>B&agrave;i 3:</strong>&nbsp;Cho đường tr&ograve;n (O), hai d&acirc;y AB, CD bằng nhau v&agrave; cắt nhau tại điểm I nằm b&ecirc;n trong đường tr&ograve;n. Chứng minh rằng:</p>\r\n\r\n<p>a, IO l&agrave; tia ph&acirc;n gi&aacute;c của một trong hai g&oacute;c tạo bởi hai d&acirc;y AB v&agrave; CD.</p>\r\n\r\n<p>b, Điểm I chia AB, CD th&agrave;nh c&aacute;c đoạn thẳng bằng nhau đ&ocirc;i một.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-3-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>a, Kẻ OH &perp; AB; OK &perp; CD.</p>\r\n\r\n<p>V&igrave; CD=AB n&ecirc;n OK=OH.</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng IKO v&agrave; tam giac vu&ocirc;ng IOH ta c&oacute;:</p>\r\n\r\n<p>OK=OH</p>\r\n\r\n<p>IO: chung</p>\r\n\r\n<p>Suy ra &Delta; IKO = &Delta;IOH ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; &ang;KIO = &ang;OIH ( 2 g&oacute;c tương ứng)</p>\r\n\r\n<p>Suy ra OI l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c BID</p>\r\n\r\n<p>b, Theo c&acirc;u a, &Delta; IKO = &Delta;IOH ( cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; IH=IK.</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O), ta c&oacute;: OK &perp; CD n&ecirc;n suy ra CK=KD( định l&yacute; về đường k&iacute;nh v&agrave; d&acirc;y) (1)</p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O), ta c&oacute;: OH &perp; AB n&ecirc;n suy ra AH=HB (định l&yacute; về đường k&iacute;nh v&agrave; d&acirc;y) (2)</p>\r\n\r\n<p>Từ (1) v&agrave; (2) ta c&oacute;: CK=AH</p>\r\n\r\n<p>Mặt kh&aacute;c, IH=IK</p>\r\n\r\n<p>Suy ra AI=CI</p>\r\n\r\n<p>V&igrave; CD=AB, m&agrave; AI=CI(chứng minh tr&ecirc;n) n&ecirc;n ta suy ra ID=IB.</p>\r\n\r\n<p><strong>B&agrave;i 4:</strong>&nbsp;Cho đường tr&ograve;n (O), c&aacute;c b&aacute;n k&iacute;nh OA v&agrave; OB. Tr&ecirc;n cung nhỏ AB lấy c&aacute;c điểm M v&agrave; N sao cho AM=BN. Gọi C l&agrave; giao điểm của c&aacute;c đường thẳng AM v&agrave; BN. Chứng minh rằng:</p>\r\n\r\n<p>a, OC l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c AOB.</p>\r\n\r\n<p>b, OC vu&ocirc;ng g&oacute;c AB.</p>\r\n\r\n<p><strong>Hướng dẫn giải</strong></p>\r\n\r\n<p><img alt=\"Chuyên đề Toán lớp 9\" src=\"https://vietjack.com/chuyen-de-toan-9/images/bai-4-chu-de-2-chuong-2-hinh-hoc-9.PNG\" /></p>\r\n\r\n<p>X&eacute;t đường tr&ograve;n t&acirc;m (O) c&oacute; AM=BN</p>\r\n\r\n<p>Từ đ&oacute; ta suy ra OE=OD (t&iacute;nh chất quan hệ giữa đường k&iacute;nh v&agrave; d&acirc;y cung)</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c vu&ocirc;ng AOD v&agrave; tam gi&aacute;c vu&ocirc;ng BOE c&oacute;:</p>\r\n\r\n<p>OA=OB(c&ugrave;ng bằng b&aacute;n k&iacute;nh)</p>\r\n\r\n<p>OE=OD(chứng minh tr&ecirc;n)</p>\r\n\r\n<p>=&gt; &Delta;AOD = &Delta;BOE (cạnh huyền-cạnh g&oacute;c vu&ocirc;ng)</p>\r\n\r\n<p>=&gt; &ang;O1&nbsp;= &ang;O4&nbsp;(2 g&oacute;c tương ứng)(1)</p>\r\n\r\n<p>Tương tự ta c&oacute;: &ang;O2&nbsp;= &ang;O3&nbsp;(2)</p>\r\n\r\n<p>Ta c&oacute;: &ang;AOC = &ang;O1&nbsp;+ &ang;O2</p>\r\n\r\n<p>&ang;BOC = &ang;O3&nbsp;+ &ang;O4</p>\r\n\r\n<p>Từ (1) v&agrave; (2) ta suy ra &ang;AOC= &ang;BOC</p>\r\n\r\n<p>Suy ra OC l&agrave; tia ph&acirc;n gi&aacute;c của g&oacute;c AOB.</p>\r\n\r\n<p>X&eacute;t tam gi&aacute;c OBF v&agrave; tam gi&aacute;c OAF c&oacute;:</p>\r\n\r\n<p>&ang;AOC = &ang;BOC (chứng minh tr&ecirc;n)</p>\r\n\r\n<p>OA=OB</p>\r\n\r\n<p>OF: chung</p>\r\n\r\n<p>Suy ra &Delta;OBF = &Delta;OAF (c-g-c)</p>\r\n\r\n<p>=&gt; BF=AF( 2 cạnh tương ứng)</p>\r\n\r\n<p>=&gt; OC &perp; AB</p>\r\n', NULL);
+INSERT INTO `tbl_news` VALUES (22, 'Toán 12 - Bài 1 : Sự đồng biến, nghịch biến của hàm số', NULL, '2019-11-06 00:00:00', 45, NULL, '<p>&nbsp;X&eacute;t sự đồng biến, nghịch biến của h&agrave;m số:</p>\r\n\r\n<p>a) y = 4 + 3x &ndash; x2</p>\r\n\r\n<p>b)&nbsp;<img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-5.PNG\" /></p>\r\n\r\n<p>c) y = x4&nbsp;- 2x2&nbsp;+ 3</p>\r\n\r\n<p>d) y = -x3&nbsp;+ x2&nbsp;&ndash; 5</p>\r\n\r\n<p><strong>Lời giải:</strong></p>\r\n\r\n<p><strong>a)</strong>&nbsp;Tập x&aacute;c định : D = R</p>\r\n\r\n<p>y&#39; = 3 &ndash; 2x</p>\r\n\r\n<p>y&rsquo; = 0 &hArr; 3 &ndash; 2x = 0 &hArr; x =&nbsp;<img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-6.PNG\" /></p>\r\n\r\n<p>Ta c&oacute; bảng biến thi&ecirc;n:</p>\r\n\r\n<p><img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-7.PNG\" /></p>\r\n\r\n<p>Vậy h&agrave;m số đồng biến trong khoảng (-&infin;; 3/2) v&agrave; nghịch biến trong khoảng (3/2 ; + &infin;).</p>\r\n\r\n<p><strong>b)</strong>&nbsp;Tập x&aacute;c định : D = R</p>\r\n\r\n<p>y&#39; = x2&nbsp;+ 6x - 7</p>\r\n\r\n<p>y&#39; = 0 &hArr; x = -7 hoặc x = 1</p>\r\n\r\n<p>Ta c&oacute; bảng biến thi&ecirc;n:</p>\r\n\r\n<p><img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-8.PNG\" /></p>\r\n\r\n<p>Vậy h&agrave;m số đồng biến trong c&aacute;c khoảng (-&infin; ; -7) v&agrave; (1 ; +&infin;); nghịch biến trong khoảng (-7; 1).</p>\r\n\r\n<p><strong>c)</strong>&nbsp;Tập x&aacute;c định: D = R</p>\r\n\r\n<p>y&#39;= 4x3&nbsp;&ndash; 4x.</p>\r\n\r\n<p>y&#39; = 0 &hArr; 4x3&nbsp;&ndash; 4x = 0 &hArr; 4x.(x &ndash; 1)(x + 1) = 0 &hArr;&nbsp;<img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-9.PNG\" /></p>\r\n\r\n<p>Bảng biến thi&ecirc;n:</p>\r\n\r\n<p><img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-10.PNG\" /></p>\r\n\r\n<p>Vậy h&agrave;m số nghịch biến trong c&aacute;c khoảng (-&infin; ; -1) v&agrave; (0 ; 1); đồng biến trong c&aacute;c khoảng (-1 ; 0) v&agrave; (1; +&infin;).</p>\r\n\r\n<p><strong>d)</strong>&nbsp;Tập x&aacute;c định: D = R</p>\r\n\r\n<p>y&#39;= -3x2&nbsp;+ 2x</p>\r\n\r\n<p>y&#39; = 0 &hArr; -3x2&nbsp;+ 2x = 0 &hArr; x.(-3x + 2) = 0 &hArr;&nbsp;<img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-11.PNG\" /></p>\r\n\r\n<p>Bảng biến thi&ecirc;n:</p>\r\n\r\n<p><img alt=\"Giải bài 1 trang 9 sgk Giải tích 12 | Để học tốt Toán 12\" src=\"https://vietjack.com/giai-toan-lop-12/images/bai-1-trang-9-sgk-giai-tich-12-12.PNG\" /></p>\r\n\r\n<p>Vậy h&agrave;m số nghịch biến trong c&aacute;c khoảng (-&infin; ; 0) v&agrave; (2/3 ; + &infin;), đồng biến trong khoảng (0 ; 2/3).</p>\r\n\r\n<p><strong>Kiến thức &aacute;p dụng</strong></p>\r\n\r\n<p>X&eacute;t sự đồng biến, nghịch biến của h&agrave;m số y = f(x).</p>\r\n\r\n<p>Bước 1: T&igrave;m tập x&aacute;c định .</p>\r\n\r\n<p>Bước 2: T&iacute;nh đạo h&agrave;m y&rsquo;. T&igrave;m c&aacute;c gi&aacute; trị của x để f&rsquo;(x) = 0 hoặc f&rsquo;(x) kh&ocirc;ng x&aacute;c định.</p>\r\n\r\n<p>Bước 3: Sắp xếp c&aacute;c gi&aacute; trị của x ở tr&ecirc;n theo thứ tự tăng dần v&agrave; lập bảng biến thi&ecirc;n.</p>\r\n\r\n<p><strong>Lưu &yacute;: Dấu của f&rsquo;(x) trong một khoảng tr&ecirc;n bảng biến thi&ecirc;n ch&iacute;nh l&agrave; dấu của f&rsquo;(x) tại một điểm x0&nbsp;bất k&igrave; trong khoảng đ&oacute;. Do đ&oacute;, ta chỉ cần lấy một điểm x0&nbsp;bất k&igrave; trong khoảng đ&oacute; rồi x&eacute;t xem f&rsquo;(x0) dương hay &acirc;m.</strong></p>\r\n\r\n<p>Bước 4: Kết luận về khoảng đồng biến v&agrave; nghịch biến của h&agrave;m số.</p>\r\n', NULL);
 
 -- ----------------------------
 -- Table structure for tbl_plans
@@ -7805,7 +7908,7 @@ CREATE TABLE `tbl_plans`  (
   `color` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`plan_id`) USING BTREE,
   INDEX `111`(`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 40 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 44 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_plans
@@ -7828,6 +7931,11 @@ INSERT INTO `tbl_plans` VALUES (16, 'Đọc và trả lồi câu hỏi tiếng A
 INSERT INTO `tbl_plans` VALUES (17, 'ưqweew', 'fa-info', 18, '2018-11-02 00:00:00', '2018-11-02 00:00:00', 'Dự án Cảnh báo cháy nhanh', 'bg-color-darken txt-color-white');
 INSERT INTO `tbl_plans` VALUES (18, 'wwwwwwwwwwwwww', 'fa-info', 17, '2018-11-12 05:00:00', '2018-11-12 05:00:00', 'Dự án Cảnh báo cháy nhanh', 'bg-color-orange txt-color-white');
 INSERT INTO `tbl_plans` VALUES (21, '14h', 'fa-info', 30, '2019-03-04 00:00:00', '2019-03-04 00:00:00', 'Học Toán tại nhà', 'bg-color-red txt-color-white');
+INSERT INTO `tbl_plans` VALUES (40, 'No Description', 'fa-info', 427, '2019-10-08 00:00:00', '2019-10-08 00:00:00', 'Untitled Event', 'bg-color-darken txt-color-white');
+INSERT INTO `tbl_plans` VALUES (41, '123', 'fa-info', 427, '2019-10-14 00:00:00', '2019-10-14 00:00:00', '123', 'bg-color-darken txt-color-white');
+INSERT INTO `tbl_plans` VALUES (42, 'No Description', 'fa-info', 427, '2019-10-20 17:00:00', '2019-10-20 17:00:00', '1', 'bg-color-red txt-color-white');
+INSERT INTO `tbl_plans` VALUES (43, '123', 'fa-check', 427, '2019-11-04 17:00:00', '2019-11-04 17:00:00', '123', 'bg-color-blueLight txt-color-white');
+INSERT INTO `tbl_plans` VALUES (44, 'thi', 'fa-warning', 427, '2019-11-14 17:00:00', '2019-11-14 17:00:00', 'Untitled Event', 'bg-color-orange txt-color-white');
 
 -- ----------------------------
 -- Table structure for tbl_questions
@@ -7842,7 +7950,7 @@ CREATE TABLE `tbl_questions`  (
   `level_id` bigint(20) NULL DEFAULT NULL,
   `date_created` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`question_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1212 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 1247 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_questions
@@ -8675,6 +8783,62 @@ INSERT INTO `tbl_questions` VALUES (1222, 'T6.Câu 26a. Nếu đèn CAPS LOCK kh
 INSERT INTO `tbl_questions` VALUES (1223, 'T6.Câu 27a. Muốn lưu văn bản đã lưu một lần, thực hiện thao tác:', 9, NULL, NULL, 1, '2019-04-23 07:31:59');
 INSERT INTO `tbl_questions` VALUES (1224, 'T6.Câu 28a. Khi đặt lại hướng trang văn bản, các kết quả định dạng văn bản em đã làm trước đó có bị mất không?', 9, NULL, NULL, 1, '2019-04-23 07:31:59');
 INSERT INTO `tbl_questions` VALUES (1225, 'T6.Câu 29a. Thay đổi lề của trang văn bản là thao tác:', 9, NULL, NULL, 1, '2019-04-23 07:31:59');
+INSERT INTO `tbl_questions` VALUES (1228, '<p>H&agrave;m số&nbsp;y=&minus;13x3+x+1y=&minus;13x3+x+1&nbsp;đồng biến tr&ecirc;n khoảng n&agrave;o ?<br />\r\n&nbsp;</p>\r\n', 1, NULL, NULL, 1, '2019-11-06 16:25:36');
+INSERT INTO `tbl_questions` VALUES (1229, '<p>Cho h&agrave;m số&nbsp;y=&minus;x3+3x2&minus;3x+1y=&minus;x3+3x2&minus;3x+1, mệnh đề n&agrave;o sau đ&acirc;y l&agrave; đ&uacute;ng?</p>\r\n', 1, NULL, NULL, 1, '2019-11-06 16:31:26');
+INSERT INTO `tbl_questions` VALUES (1230, '<p>Cho h&agrave;m số&nbsp;y=&minus;x3+3x2&minus;3x+1y=&minus;x3+3x2&minus;3x+1, mệnh đề n&agrave;o sau đ&acirc;y l&agrave; đ&uacute;ng?</p>\r\n', 1, NULL, NULL, 1, '2019-11-06 16:33:24');
+INSERT INTO `tbl_questions` VALUES (1234, '123', 2, NULL, NULL, 1, '2019-11-08 09:50:27');
+INSERT INTO `tbl_questions` VALUES (1236, '123', 2, NULL, NULL, 1, '2019-11-08 09:51:37');
+INSERT INTO `tbl_questions` VALUES (1237, '456', 2, NULL, NULL, 1, '2019-11-08 09:51:37');
+INSERT INTO `tbl_questions` VALUES (1238, '<p>12</p>\r\n', 10, NULL, NULL, 3, '2019-11-21 00:54:53');
+INSERT INTO `tbl_questions` VALUES (1239, '123', 2, NULL, NULL, 1, '2019-12-16 08:47:24');
+INSERT INTO `tbl_questions` VALUES (1240, '456', 2, NULL, NULL, 1, '2019-12-16 08:47:24');
+INSERT INTO `tbl_questions` VALUES (1241, '123', 2, NULL, NULL, 1, '2019-12-16 12:41:56');
+INSERT INTO `tbl_questions` VALUES (1242, '456', 2, NULL, NULL, 1, '2019-12-16 12:41:56');
+INSERT INTO `tbl_questions` VALUES (1243, '123', 2, NULL, NULL, 1, '2019-12-17 10:44:30');
+INSERT INTO `tbl_questions` VALUES (1244, '456', 2, NULL, NULL, 1, '2019-12-17 10:44:30');
+INSERT INTO `tbl_questions` VALUES (1245, '123', 2, NULL, NULL, 1, '2019-12-19 15:40:52');
+INSERT INTO `tbl_questions` VALUES (1246, '456', 2, NULL, NULL, 1, '2019-12-19 15:40:52');
+
+-- ----------------------------
+-- Table structure for tbl_subject
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_subject`;
+CREATE TABLE `tbl_subject`  (
+  `subject_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `subject_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`subject_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tbl_subject
+-- ----------------------------
+INSERT INTO `tbl_subject` VALUES (1, 'Toán', 'toán');
+INSERT INTO `tbl_subject` VALUES (2, 'Vật Lý', 'lý');
+INSERT INTO `tbl_subject` VALUES (3, 'Hóa Học', 'hóa');
+INSERT INTO `tbl_subject` VALUES (4, 'Văn Học', 'văn');
+INSERT INTO `tbl_subject` VALUES (5, 'Lịch Sử', 'sử');
+INSERT INTO `tbl_subject` VALUES (6, 'Địa Lý', 'địa');
+INSERT INTO `tbl_subject` VALUES (7, 'Anh Văn', 'anh');
+
+-- ----------------------------
+-- Table structure for tbl_time_exam
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_time_exam`;
+CREATE TABLE `tbl_time_exam`  (
+  `time_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `time_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`time_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tbl_time_exam
+-- ----------------------------
+INSERT INTO `tbl_time_exam` VALUES (1, '15 phút');
+INSERT INTO `tbl_time_exam` VALUES (2, '30 phút');
+INSERT INTO `tbl_time_exam` VALUES (3, '45 phút');
+INSERT INTO `tbl_time_exam` VALUES (4, '60 phút');
+INSERT INTO `tbl_time_exam` VALUES (5, '90 phút');
 
 -- ----------------------------
 -- Table structure for tbl_topic
@@ -8685,7 +8849,7 @@ CREATE TABLE `tbl_topic`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `subject_id` bigint(20) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 45 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 46 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_topic
@@ -8722,6 +8886,7 @@ INSERT INTO `tbl_topic` VALUES (40, 'Hàm số bậc nhất', 1);
 INSERT INTO `tbl_topic` VALUES (41, 'Hệ thức lượng trong tam giác vuông', 1);
 INSERT INTO `tbl_topic` VALUES (42, 'Đường tròn', 1);
 INSERT INTO `tbl_topic` VALUES (44, 'Hidrocacbon Thơm', 3);
+INSERT INTO `tbl_topic` VALUES (45, 'Đồng biến - nghịch biến', 1);
 
 -- ----------------------------
 -- Table structure for tbl_users
@@ -8743,13 +8908,12 @@ CREATE TABLE `tbl_users`  (
   `img_profile` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 397 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 429 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tbl_users
 -- ----------------------------
-INSERT INTO `tbl_users` VALUES (17, 'admin', 'Trần Văn An', 'oyjzU5AULCaZwOpwPQ8DeeL+GSujmNUamb646S8Z2hw=', 'BILmgi', 'Học viện kỹ thuật quân sự', '1994-10-01 00:00:00', '2018-10-22 22:45:44', 'Công nghệ thông tin', 1, NULL, b'1', NULL, NULL);
-INSERT INTO `tbl_users` VALUES (24, 'NguyenVanB', 'NguyenVanB', '3TfMRYSb9LxqIDqQbfXQl7/aUXLNAaFExI/c11SUc0w=', 'DU8wJa', 'THCS Phung xa', '1997-06-03 00:00:00', '2019-01-30 21:19:08', 'Do vao 10', 2, NULL, b'1', NULL, 'ngochongk63@gmail.com');
+INSERT INTO `tbl_users` VALUES (24, 'NguyenVanB', 'NguyenVanB1', '3TfMRYSb9LxqIDqQbfXQl7/aUXLNAaFExI/c11SUc0w=', 'DU8wJa', 'THCS Phung xa 1', '1997-06-01 00:00:00', '2019-01-28 00:00:00', 'Do vao 10', 2, NULL, b'1', NULL, 'ngochongk63@gmail.com');
 INSERT INTO `tbl_users` VALUES (25, 'NguyenHongNgoc', 'Nguyễn Thị Hồng Ngọc', 'hMJIouFd7gGemTpqA8DIFaEjj4rPS6XcqsNM5T2FCGw=', 'Gwn2pj', 'THCS Phùng Xá', '1997-06-03 00:00:00', '2019-03-01 13:03:19', 'Thi đỗ vào lớp 10', 1, NULL, b'1', NULL, 'ngochongk63@gmail.com');
 INSERT INTO `tbl_users` VALUES (27, 'NguyenThiHongNgoc', 'Nguyễn Thị Hồng Ngọc', '/6qvDdHAG+GqgtT7yPHAraPAYGIwMU1qZNOXuPdGg8k=', 'pEuUY8', 'THPT PKK', '1996-06-03 00:00:00', '2019-03-04 22:23:35', 'Thi điểm cao', 2, NULL, b'1', NULL, 'ngochongk63@gmail.com');
 INSERT INTO `tbl_users` VALUES (28, 'THCSPX01', 'THCS Phùng Xá', '5yY7q7apShv/9HYDdrJrKxZXbbvTYoweZW1X+MQ2VSA=', 'FckkFg', 'THCS Phùng Xá', '1997-06-03 00:00:00', '2019-03-05 08:40:40', 'Thi điểm cao', 1, NULL, b'1', NULL, 'ngochongk63@gmail.com');
@@ -8758,9 +8922,8 @@ INSERT INTO `tbl_users` VALUES (30, 'NguyenKhaTrung', 'Nguyễn Khả Trung', '9
 INSERT INTO `tbl_users` VALUES (78, 'phungthihao', 'Phùng thị hảo', 'ajsGVHk13yGcaRuSbg+017/r1qvdfENaNThnI5O754o=', 'ILWEJY', 'THCS Bình Phú', '1981-06-12 00:00:00', '2019-03-05 15:43:03', 'thêm đề', 1, NULL, b'1', NULL, 'haovinh79@gmail.com');
 INSERT INTO `tbl_users` VALUES (79, 'nguyenhoaian', 'nguyenhoaian', 'RPCyNO5jVXof9TtWEt+sQjxKyKltEBJDJWtMFAN+NyM=', 'xKLrEc', 'THCS Bình Phú', '1984-09-07 00:00:00', '2019-03-05 15:46:29', 'them de ', 1, NULL, b'1', NULL, 'phuongan8293@gmail.com');
 INSERT INTO `tbl_users` VALUES (82, 'Nguyễn Thị Hồng Ngọc', 'Nguyễn Thị Hồng Ngọc', 'Bmm8EEffUYCpMkW1D+aMO0zAMxEEJThPlrw/WyaOA/E=', 'ria5KN', 'THCS Phùng Xá', '1997-06-03 00:00:00', '2019-03-08 10:12:59', 'Thi vào 10', 2, NULL, b'1', NULL, 'nguyenngoc@gmail.com');
-INSERT INTO `tbl_users` VALUES (83, 'Nguyễn Thị Hồng Ngọc', 'Nguyễn Thị Hồng Ngọc', 'gxlimPF+NPu3ruOv+amaL/TTFn1VIOQHDg2kQ4WRYGE=', '6UnE3O', 'THCS Phùng Xá', '1997-06-03 00:00:00', '2019-03-09 09:00:11', 'Thi vào 10', 2, NULL, b'1', NULL, 'nguyenngoc@gmail.com');
 INSERT INTO `tbl_users` VALUES (84, 'Đỗ Thị Lệ Xuân', 'Đỗ Thị Lệ Xuân', 'FlS/IvrppllUVFWRqxXRQPnekh2JZKsj1BDc0R5acfY=', 'usjsnB', 'THCS Phùng Xá', '1982-03-08 00:00:00', '2019-03-10 15:21:23', 'Tiếng Anh ', 2, NULL, b'1', NULL, 'Hipcute197@gmail.com');
-INSERT INTO `tbl_users` VALUES (85, 'Vương Thị Ngọc Tú', 'Vương Thị Ngọc Tú', 'lBeEwh1dw+TT31J6Uz96uY90o58a07bcwPNYIzgDh9M=', 'UiFlDD', 'THCS Phùng Xá', '2005-10-12 00:00:00', '2019-03-11 19:33:59', 'Đỗ vào 10 PKK', 2, NULL, b'1', NULL, 'vuongthingoctu@gmail.com');
+INSERT INTO `tbl_users` VALUES (85, 'Vương Thị Ngọc Tú', 'Vương Thị Ngọc Tú1', 'lBeEwh1dw+TT31J6Uz96uY90o58a07bcwPNYIzgDh9M=', 'UiFlDD', 'THCS Phùng Xá', '2005-10-11 00:00:00', '2019-03-10 00:00:00', 'Đỗ vào 10 PKK', 2, NULL, b'1', NULL, 'vuongthingoctu@gmail.com');
 INSERT INTO `tbl_users` VALUES (86, 'Ngô Thị Triệu Vi', 'Ngô Thị Triệu Vi', 'LcAJiEWO9/FtOAYK+jZWqQD+DPmdl4BPY7OxUrWJmUc=', 'ENnSRI', 'THCS Thạch Thất', '2004-02-02 00:00:00', '2019-03-11 19:41:41', 'Đỗ vào 10', 2, NULL, b'1', NULL, 'vivivi8a2@gmail.com');
 INSERT INTO `tbl_users` VALUES (87, 'Chu Quốc Vũ', 'Chu Quốc Vũ', 'SriDphJR5o6qajgPkIR9XRYBT1mbdjYriO7aiR1eo4E=', '2dqzAw', 'THCS Phùng Xá', '2004-12-02 00:00:00', '2019-03-11 19:45:51', 'Đỗ vào 10 PKK', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (88, 'Lê Duy Hưng', 'Lê Duy Hưng', '6qPXpEHVHfUbWXyW9rwLtjvIeEGRIbpwq91UE78GrmE=', '9lwpkj', 'THCS Thạch Thất', '2004-11-03 00:00:00', '2019-03-11 19:50:40', 'Đỗ vào 10', 2, NULL, b'1', NULL, 'ngochongk63@gmail.com');
@@ -8807,7 +8970,6 @@ INSERT INTO `tbl_users` VALUES (137, 'Trang Phùng', 'Phùng Thị Trang', 'M1Mv
 INSERT INTO `tbl_users` VALUES (138, 'Hotham', 'Hồ Thị Thắm', 'wIN42aFSzeFEdbsXg6X3XOHI9zyWz+vYkebdss/zHl8=', 'eH4Yeh', 'Phùng xá', '2005-10-10 00:00:00', '2019-03-16 18:45:42', 'Phùng Khắc Khoan', 2, NULL, b'1', NULL, 'thamthiet22@gmail.com');
 INSERT INTO `tbl_users` VALUES (139, 'Nguyễn Bích Nga', 'Nguyễn Bích Nga', '8znqi9bonrmB+ar6XetPWtQVG6O4Q1w6pX75L28NZWM=', '85u8kQ', 'THCS Phùng Xá', '2004-04-08 00:00:00', '2019-03-16 19:37:49', 'kiểm tra', 2, NULL, b'1', NULL, 'nguyenbichnga04082004@gmail.com');
 INSERT INTO `tbl_users` VALUES (140, 'THCSPX01', 'Nguyễn Thị Thúy Hà', '4losu+DsAeONoENcQaCl5bYJS3Q2Gbmp0V3wT8Y7neg=', 'ly7S2o', 'Trung học cơ sở Phùng Xá', '2004-01-09 00:00:00', '2019-03-16 19:41:53', '', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (141, 'THCSPX01', 'Nguyễn Thị Thúy Hà', '/UimZxGf0hXBReOLDKyrQOEuVkI4ydMk5TJF/ekTgVE=', 'dKBMya', 'Trung học cơ sở Phùng Xá', '2020-04-03 00:00:00', '2019-03-16 19:46:03', 'THPT PKK', 2, NULL, b'1', NULL, 'HOILAMGI@Gmail.com');
 INSERT INTO `tbl_users` VALUES (142, 'Huyen9a5px', 'Trần Thị Huyền', '7CrHsK4V7VtTm/Y/50eYNvsFTOOgYoCxZlEW9OntOJo=', 'Bvsm9d', 'Trung học cơ sở Phùng Xá', '2004-11-09 00:00:00', '2019-03-16 19:48:49', 'Thi cấp 3 ', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (143, 'Nguyenanh', 'Nguyễn Thị Ánh', '5Ji6ULEchl0Ep7bg3K3nN4g24q0uS6tlOjcqt4XX13k=', 'SYQVsM', 'Thcs phùng xá', '2005-02-02 00:00:00', '2019-03-16 19:49:10', '', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (144, 'huyen9a5phungxa', 'Trần Thị Huyền', '0ttJtQ8/Oxp0tdIn8d0XB5hvCjT+PQpTzQ7sPi2FN04=', '2gftbl', 'Trung học cơ sở Phùng Xá', '2004-11-09 00:00:00', '2019-03-16 19:50:08', 'Thi cấp 3', 2, NULL, b'1', NULL, '');
@@ -8833,7 +8995,6 @@ INSERT INTO `tbl_users` VALUES (165, 'Dương Thị Thu Trang', 'Dương Thị T
 INSERT INTO `tbl_users` VALUES (166, 'Nguyễn Thị Hồng', 'Nguyễn Thị Hồng', 'kc+vdlINPJeatEJpn2o2X8xnGE7Nst8ID8zj1TMJEeY=', 'OPGDqF', 'THCS Phùng Xá', '2005-08-11 00:00:00', '2019-03-18 20:10:08', '', 2, NULL, b'1', NULL, 'thuthao18329@gmail.com');
 INSERT INTO `tbl_users` VALUES (167, '011657779', 'Nguyễn thị hằng ', 'Jl+3Ctf2kQ3tunFEzByo4nLHwCIBXduGnSEeMTU4cvo=', 'DiAidt', 'Trung học cơ sở phùng xá ', '2004-06-12 00:00:00', '2019-03-18 21:16:03', 'Ôn tập trả lời câu hỏi trắc nghiệm lịch sử ', 2, NULL, b'1', NULL, 'nguyenhang@gmail.com');
 INSERT INTO `tbl_users` VALUES (168, 'Nguyễn thị Hằng', 'Nguyễn thị Hằng', 'm9lI3udHprhsrHtIyNHQtI9GI7908Xn52BB37GdV2Yg=', 'GKfP1S', 'Trường thpt Phùng khắc khoan', '2019-02-03 00:00:00', '2019-03-19 07:40:37', 'Thi vào 10', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (169, 'Nguyễn thị Hằng', 'Nguyễn thị Hằng', 'usGU15lEwubr8fDGprTSeGQ9WlJ9OUr8VEUTHYc826Y=', '8kXMy2', 'Trường thpt Phùng khắc khoan', '2019-02-03 00:00:00', '2019-03-19 07:40:49', 'Thi vào 10', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (170, 'TrinhOanh', 'Trịnh Thị Oanh', 'EbP+OBGB/9aGdHjAyrpWYTquDmDzlnihJoMEwYt52Fc=', '3amaCy', 'Trường THCS Phùng Xá', '2004-11-05 00:00:00', '2019-03-19 12:54:02', 'Trường THPT Phùng Khắc Khoan', 2, NULL, b'1', NULL, 'trinhoanh0700@gmail.com');
 INSERT INTO `tbl_users` VALUES (171, 'hà a1', 'cấn thị hà', 'oAMh3ZfURIx+4mJ5AH6jSPrE6WAcHDcu/tnnVVWFS4k=', 'hjgZQN', 'thcs phùng xá', '2004-01-12 00:00:00', '2019-03-19 16:53:30', 'pùng khắc khoan', 2, NULL, b'1', NULL, 'hacherry01122004@gmail.com');
 INSERT INTO `tbl_users` VALUES (172, 'phungmaianh5@gmail.com', 'Phùng mai anh', 'wT6gtquGSxKMgWtFr5pnaryUbjoLwixWxiJifbn9PCk=', 'z1n29P', 'Trung học cơ sở phùng xá', '2006-06-08 00:00:00', '2019-03-19 16:53:49', '', 2, NULL, b'1', NULL, 'phungmaianh5@gmail.com');
@@ -8977,7 +9138,6 @@ INSERT INTO `tbl_users` VALUES (325, 'kimoanhnguyen2004', 'Nguyễn Thị Kim Oa
 INSERT INTO `tbl_users` VALUES (326, 'duongphutruong', 'Dương Phú Trường', '3GCfWaE356N4/Ax6LJZruYzYuYhbf5W9l0ix3mOYI2A=', 'CaXe21', 'THCS Phùng Xá', '2007-06-07 00:00:00', '2019-04-18 16:59:25', 'Thi học kỳ II', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (327, 'ChuThiHuyen', 'Chu Thị Huyền', 'Jtb3rGbP3senu6PE9RpH+41PlRJxgeAimpMl2cHUib4=', 'C2cYSN', 'Trường THCS Phùng Xá', '2007-02-02 00:00:00', '2019-04-18 18:51:52', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (328, 'NguyenDoanTuanAnh', 'Nguyễn Doãn Tuấn Anh', 'FRX+tSKwgPod7rIhGQG8QPJp6Bf6nmHRBPYwl3J5aj8=', 'h173g1', 'trường THCS Phùng Xá', '2006-06-09 00:00:00', '2019-04-18 20:26:37', 'thi học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (329, 'DangThiNga', 'Đặng Thị Nga', '4W2LUUEv05ayg+oDxqIzrQhLMqQFgZaJR0Wpr4mOXJw=', 'rNQtS8', 'Trường THCS Phùng Xá', '2006-10-04 00:00:00', '2019-04-18 20:42:32', 'Thi học kì 2', 2, NULL, b'1', NULL, '0978652006@gmail.com');
 INSERT INTO `tbl_users` VALUES (330, 'DangThiNga', 'Đặng Thị Nga', '/N0vmx0i82A2Q18FdRfTqfxi6Z+/fwS+VuNcm1XCRUY=', '0QDAKO', 'Trường THCS Phùng Xá', '2006-10-04 00:00:00', '2019-04-18 20:45:05', 'Thi học kì 2', 2, NULL, b'1', NULL, 'hanghang15091998@gmail.com');
 INSERT INTO `tbl_users` VALUES (332, 'hanhan06', 'Trần Tiểu Hân Hân', '/YuSDZv0qyt1LlyF6iyGa2ioEGNgiVEX8hS7uJymkX8=', 'NruSM2', 'Trường THCS Phùng Xá', '2008-05-08 00:00:00', '2019-04-18 20:58:41', 'Thi học kì 2', 2, NULL, b'1', NULL, 'tranhanhan06@gmail.com');
 INSERT INTO `tbl_users` VALUES (333, 'Nguyenphuviet', 'Nguyễn Phú Việt', 'vU0H0/YAZIqK6o9i4cJeJG8ZFAKQvxpQWxYBs+LhDpE=', 'z2OfE7', 'Trường Trung Học Cơ Sở Phùng Xã', '2008-05-09 00:00:00', '2019-04-18 21:08:00', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
@@ -9006,22 +9166,17 @@ INSERT INTO `tbl_users` VALUES (355, 'NguyenThiLeThuy', 'Nguyễn Thị Lệ Thu
 INSERT INTO `tbl_users` VALUES (356, 'DoVanNam', 'Đỗ Văn Nam', 'zLyPDMeJJmNi7veLgqvDajcFpUuBUN/IgYq/7gUUgBk=', 'Vxv020', 'THCS Phùng Xá', '2006-08-08 00:00:00', '2019-04-19 12:27:49', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (357, 'Dothithanh', 'Đỗ Thị Thanh', 'ghbMStNACWKNLIdaG23pboTPFMbjilawmsdF4I8Bxpc=', 'WBoiYW', 'Thcs phùng xá', '2007-08-07 00:00:00', '2019-04-19 14:52:22', 'Thcspx hk2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (358, 'phungkhacphuc', 'Phùng khắc Phúc', 'I2juJpcLTA99EcS45UyiFmVzkFetUBkhBe6HbN5rZUo=', 'NZ3z9E', 'Trường Trung học Cơ Sở Phùng Xá', '2007-10-10 00:00:00', '2019-04-19 20:57:53', 'thi học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (359, 'P. Thao', 'Đỗ Thị Thanh Thảo', 'JnjvWmH2HfSM4St7Cxe4uogx0wJW3UqrJAl9kWmaEdE=', 'NwmiTF', 'THCS Phùng Xá', '2007-07-10 00:00:00', '2019-04-19 21:10:46', 'Thi học kì II', 2, NULL, b'1', NULL, 'missdung@gmail.com');
 INSERT INTO `tbl_users` VALUES (360, 'P. Thao', 'Đỗ Thị Thanh Thảo', '6GAKKcJBaA0oqB8576+y27gVxL14MaFyq6ve0Cj0HeE=', 'ePkS5D', 'THCS Phùng Xá', '2007-07-10 00:00:00', '2019-04-19 21:10:53', 'Thi học kì II', 2, NULL, b'1', NULL, 'missdung@gmail.com');
 INSERT INTO `tbl_users` VALUES (361, 'THCSPX 01', 'Nguyễn Thị Hòa', 'qamd+YFU4nL73WOLyG0nL3ypMEPpP39qMy3GCQ8nsic=', 'vobnM5', 'THCS PX', '2005-10-09 00:00:00', '2019-04-20 13:05:15', '', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (362, 'Nguyễn Thị Hòa', 'Nguyễn Thị Hòa', '1tSwvnLq7zbeBXnkfFeLDEk5NOcrZM1+JZjoyamwjiM=', 'Zs9cXs', 'THCS px', '2005-10-09 00:00:00', '2019-04-20 13:09:07', '', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (363, 'Nguyen Đinh Quang Huy', 'Nguyễn Đình Quang Huy', '/7OvN060uHUXld/RiexFICNjc4mWkTFuOd/hrsplEZA=', 'gtQazA', 'THCS Phùng Xá', '2007-03-03 00:00:00', '2019-04-20 14:34:15', '', 2, NULL, b'1', NULL, 'huya22006@gmail.com');
 INSERT INTO `tbl_users` VALUES (364, 'NguyenThiMai', 'Nguyễn Thị Mai', 'r2+rkfdVzBe+YCtow6mZgxgX+GwhYQ0uRyZcQK5k6lY=', 'd3RLRv', 'Trường Trung học cơ sở Phùng Xá', '2006-07-06 00:00:00', '2019-04-20 18:15:57', 'Học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (365, 'NguyenPhuongAnh', 'Nguyễn Phương Anh', 'yL5S24mzFXHInq1gOaptwSLgk+r90pmt/lrCFJ+8zoE=', 'ajCicE', 'Trường thcs Phùng Xá', '2006-01-09 00:00:00', '2019-04-20 20:28:48', '', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (366, 'NguyenKhaManh', 'Nguyễn Khả Mạnh', 'yVVJ+L1SEW1v6Ntp+EpiSq3kbdNqwbI1spWANQve+Cw=', 'g9OTAA', 'Trung học cơ sở Phùng Xá', '2007-02-12 00:00:00', '2019-04-20 20:38:34', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (367, 'NguyenKhaManh', 'Nguyễn Khả Mạnh', 'I8lOHEB662uYHjxo+T9oBeAsdzaOxzMYsP805BWo7LE=', 'Y9ug39', 'Trung học cơ sở Phùng Xá', '2007-02-12 00:00:00', '2019-04-20 20:39:23', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (368, 'ChuDoThuyLinh', 'Chu Đỗ Thùy Linh', 'A/nD2B74NRn1s3Ojkf76wfq1mbOzE7lNu7d322G0uZM=', 'VIQrDg', 'THCS Phùng Xá', '2008-02-09 00:00:00', '2019-04-21 07:40:50', 'Thi học kì II', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (369, 'LeThiLanAnh', 'Lê Thị Lan Anh', 'MGZajMJPyQ9E25LknCEtLaoBRyJpOSobtykAv+Fa2/k=', 'qyEQDZ', 'Trường THCS Phùng Xá', '2007-12-10 00:00:00', '2019-04-21 08:38:11', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (370, 'TrinhVanNguyen', 'Trịnh Văn Nguyên', 'qudiSf4IruRIWLmPgw4mjwNHSL+/0HSM63BOw7503YA=', 'wC82M6', 'Trường THCS Phùng Xá', '2008-03-02 00:00:00', '2019-04-21 08:45:23', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (371, 'ChuThiLanPhuong', 'Chu Thị Lan Phương', 'z3F0D98rAMpgTzCXUH3eU0STz0FrjZfGYKQvKGpFvlg=', 'LaCgPJ', 'THCS PHÙNG XÁ', '2008-01-07 00:00:00', '2019-04-21 11:21:45', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (372, 'ChuThiLanPhuong', 'Chu Thị Lan Phương', 'jx0o1Nb8dB+77Jqma38c67TjXRSJk5UiByi/ZSxhieY=', 'yTdvqJ', 'THCS PHÙNG XÁ', '2008-01-07 00:00:00', '2019-04-21 11:23:12', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (373, 'Dangthimy', 'Đặng Thị Mỹ', 'FVYGQERq0N3+Evsypao1zP2I7mXERIzKz8OBnqkc0Oc=', 'Tv3Bph', 'Trung học cơ sở Phùng Xá', '2006-02-02 00:00:00', '2019-04-21 13:14:36', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (374, 'Dangthimy', 'Đặng Thị Mỹ', 'J7Ngq8ugaNZ/6VaFbcaS1bvT5rNhV8177yx0Wyhw86Y=', 'Apswvo', 'Trung học cơ sở Phùng Xá', '2006-02-02 00:00:00', '2019-04-21 13:20:10', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (375, 'Dangthimy', 'Đặng Thị Mỹ', 'Pb8408WaU6JANYSqjnvgmZldLcPdBRIugTfg8lAQoyU=', '5wKBWT', 'Trung học cơ sở Phùng Xá', '2006-02-02 00:00:00', '2019-04-21 13:20:31', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (376, '131216', 'Nguyễn Thị Hương Giang', 'nOTsniNzlWF7ibv8CLpZsorFDzhAMPTMYP3mHuPPZfQ=', 'HVsKe3', 'THCS Phùng Xá', '2006-03-05 00:00:00', '2019-04-21 14:59:50', 'Thi học kì II', 2, NULL, b'1', NULL, 'giang@gmail.com');
 INSERT INTO `tbl_users` VALUES (377, 'ChuThiThuHang', 'Chu Thị Thu Hằng', 'hKBYt9bZ3ElghVD5xUNP4gpFKmKmdUUNvrG/mCbT1+k=', 'BgJ7Kg', 'THCS Phùng xá', '2006-10-11 00:00:00', '2019-04-21 18:12:29', 'thi học kì 2', 2, NULL, b'1', NULL, '');
@@ -9030,9 +9185,7 @@ INSERT INTO `tbl_users` VALUES (379, 'NguyenThiKhanhHuyen', 'Nguyễn Thị Khá
 INSERT INTO `tbl_users` VALUES (380, 'dangonlak', 'haha', 'uVcKMY3v7bzi+mlMWh1drRmGMHw6D36csgUwAjjKFMc=', 'b2gONu', '', '2006-03-03 00:00:00', '2019-04-21 19:34:52', 'cười', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (381, 'NguyenHa', 'Nguyễn Thị Hà', 'DeQhhUsXZjvGLZU3Cw6LwdqAaZjMa5a+5tcX/0WgiBQ=', 'NdFhjf', 'THCS Phùng Xá', '2007-12-03 00:00:00', '2019-04-21 19:44:32', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (383, 'VuongThiVi', 'Vương Thị vi', 'NMWODVrmq54xTZ3YNNSv5KTs+vQ1pbNrh3IV45qO8nA=', 'ZxyRVu', 'Trường thcs Phùng Xá', '2006-08-03 00:00:00', '2019-04-21 22:42:20', 'Học kì 2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (384, 'VuongThiVi', 'Vương Thị vi', 'YM9j+dDRULG/dekxC79lsHi9gFpYsZIo/0DXlHXlQGs=', 'W5CKFz', 'Trường thcs Phùng Xá', '2006-08-03 00:00:00', '2019-04-21 22:43:11', 'Học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (385, 'nguyennhunguyet', 'Nguyễn Như Nguyệt', 'YjCOBFL0OUhko84EpVjq+Gbwh49Uv93b9J3tb2jjvUY=', 'DE70up', 'THCS Phùng Xá', '2007-02-05 00:00:00', '2019-04-21 22:55:04', 'Thi HK2', 2, NULL, b'1', NULL, '');
-INSERT INTO `tbl_users` VALUES (386, 'Hatrang7a2', 'Lường Thị Hà Trang', 'ZkybmZ235Rwz7nawP/e2ECCcWXMOw8dX7LuLlzJc+38=', '6CIF8s', 'Thcs Phùng cá', '2006-10-01 00:00:00', '2019-04-22 08:03:45', 'Thi Học kỳ II', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (387, 'Hatrang7a2', 'Lường Thị Hà Trang', 'Okd2AcKpVYzLO1GGh7nV/3wuadb0qsslaW5G9AEnp4s=', 'oziVQb', 'Thcs Phùng xá', '2006-10-01 00:00:00', '2019-04-22 08:05:32', 'Thi học kì II', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (388, 'phungvantuan', 'Phùng Văn Tuân', 'CQzO0Ogc9v5Mbkht+jmrgoa215Utz9Ajdrby7ugH4yc=', 'btW1ur', 'THCS Phùng Xá', '2006-10-12 00:00:00', '2019-04-22 10:07:57', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (389, 'Phunglanphuong', 'Phùng Lan Phương', 'TCKPk9mWP7XFPQthICMRXdmaUFAqMPavg86m5Asju5Y=', '6G0qDt', 'THCS Phùng Xá', '2007-06-08 00:00:00', '2019-04-22 12:44:09', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
@@ -9041,7 +9194,11 @@ INSERT INTO `tbl_users` VALUES (391, 'ngothithuhuong', 'ngô thi thu huong', 'vZ
 INSERT INTO `tbl_users` VALUES (392, 'dangkhanhly', 'Đặng Khánh Ly', 'yK8WJwTlTR4LasgmOySvCi/GH6HKn+tHdt2xpet2D9s=', 'fB9kMq', 'Trường trung học cơ sở Phùng Xá', '2006-09-07 00:00:00', '2019-04-22 17:06:49', 'thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (393, 'DuongYenAnh', 'Dương Yến Anh', 'n18PZbR84lxpTaAxYEmhIafYXfP4K3TBBVkBqm11la8=', '3BdV6V', 'Trung học cơ sở Phùng Xá', '2006-05-10 00:00:00', '2019-04-22 17:34:18', 'Thi học kì 2', 2, NULL, b'1', NULL, '');
 INSERT INTO `tbl_users` VALUES (394, 'DangKhaiHoan', 'Đặng Khải Hoàn', '7coh4Lv/ZHbBjBXh9JVX+zVRtW1tDEToPKl03SIBbk8=', 'SYBsZi', 'Trung học cơ sở pgungf xá', '2008-07-12 00:00:00', '2019-04-22 20:02:42', '', 2, NULL, b'1', NULL, 'dkhaihoan6@gmail.com');
-INSERT INTO `tbl_users` VALUES (395, 'DangKhaiHoan', 'Đặng Khải Hoàn', 'TwNx8ss91+w7jcqAUlzPSMXfxYLuNFi79nnuP/TTq34=', 'MavdzV', 'Trung học cơ sở phùng xá', '2008-07-12 00:00:00', '2019-04-22 20:03:19', '', 2, NULL, b'1', NULL, 'dkhaihoan6@gmail.com');
 INSERT INTO `tbl_users` VALUES (396, 'thanhtrucnguyen', 'Nguyễn Thị Thanh Trúc', 'KcqCXf81vYuojROLchm8W01QqjZff/53nV4a9AESAa8=', 'XoJlQE', 'Trường THCS Phùng Xá', '2008-07-07 00:00:00', '2019-04-22 20:13:14', 'Thi học kì ', 2, NULL, b'1', NULL, '');
+INSERT INTO `tbl_users` VALUES (422, 'ducnt2', '123', NULL, NULL, '123', '2019-10-18 00:00:00', '2019-10-05 00:00:00', NULL, 123312123, NULL, NULL, NULL, '132132132');
+INSERT INTO `tbl_users` VALUES (425, 'admin123', 'Nguyễn Thanh Đức', 'b5vofcgrCLbqDvQFot5n2k+5UCwydbWnWA80sYAji/c=', 'eG3zx4', 'Nguyễn Thanh Đức', '1996-07-09 00:00:00', '2019-10-20 23:01:56', '1', 1, NULL, b'1', NULL, 'dtno195@yahoo.com.vn');
+INSERT INTO `tbl_users` VALUES (426, 'admin123', 'Nguyễn Thanh Đức', 'QwPZ+1nWY/2gViWDW6WX8L8sxajnnwsCpRF73PTIt78=', 'TEaWT9', 'Nguyễn Thanh Đức', '1996-07-09 00:00:00', '2019-10-20 23:02:38', '1', 2, NULL, b'1', NULL, 'dtno195@yahoo.com.vn');
+INSERT INTO `tbl_users` VALUES (427, 'admin1234', 'Nguyễn Thanh Đức', '17AuF4Rsz5Era9cABAAnfF1N31eCVlbensSjmwpSdTU=', 'wc75sx', 'Nguyễn Thanh Đức', '1996-07-09 00:00:00', '2019-10-20 23:05:59', '1', 2, NULL, b'1', NULL, 'dtno195@yahoo.com.vn');
+INSERT INTO `tbl_users` VALUES (428, 'superadmin', 'Nguyễn Thanh Đức', '2SsqlGrHDzR3k4WFKHWCxPh3QcSQUhcnpY5lImevPHM=', '1qF1eF', 'Nguyễn Thanh Đức', '1996-07-08 17:00:00', '2019-12-04 16:27:01', '1', 1, NULL, b'1', NULL, 'dtno1.study@gmail.com');
 
 SET FOREIGN_KEY_CHECKS = 1;
